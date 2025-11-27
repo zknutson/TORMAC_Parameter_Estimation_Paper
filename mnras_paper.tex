@@ -1,0 +1,629 @@
+% mnras_template.tex 
+%
+% LaTeX template for creating an MNRAS paper
+%
+% v3.0 released 14 May 2015
+% (version numbers match those of mnras.cls)
+%
+% Copyright (C) Royal Astronomical Society 2015
+% Authors:
+% Keith T. Smith (Royal Astronomical Society)
+
+% Change log
+%
+% v3.2 July 2023
+%	Updated guidance on use of amssymb package
+% v3.0 May 2015
+%    Renamed to match the new package name
+%    Version number matches mnras.cls
+%    A few minor tweaks to wordinghttps://www.overleaf.com/project/6521d4070c4e7b9b11e3d2e7
+% v1.0 September 2013
+%    Beta testing only - never publicly released
+%    First version: a simple (ish) template for creating an MNRAS paper
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic setup. Most papers should leave these options alone.
+\documentclass[fleqn,usenatbib]{mnras}
+
+% MNRAS is set in Times font. If you don't have this installed (most LaTeX
+% installations will be fine) or prefer the old Computer Modern fonts, comment
+% out the following line
+\usepackage{newtxtext,newtxmath,gensymb}
+\usepackage{mathalpha}
+% Depending on your LaTeX fonts installation, you might get better results with one of these:
+%\usepackage{mathptmx}
+%\usepackage{txfonts}
+
+% Use vector fonts, so it zooms properly in on-screen viewing software
+% Don't change these lines unless you know what you are doing
+\usepackage[T1]{fontenc}
+\newcommand{\zach}[1]{\textcolor{red}{[Zach: {#1}]}}
+\newcommand{\Y}[0]{$Y$}
+\newcommand{\sig}[0]{$\sigma$}
+\newcommand{\p}[0]{$p$}
+\newcommand{\vff}[0]{$\log{(\Phi)}$}
+\newcommand{\inc}[0]{$i$}
+\newcommand{\soft}[0]{$s$}
+\newcommand{\Ypol}[0]{$Y_{\text{pol}}$}
+\newcommand{\sigpol}[0]{$\sigma_{\text{pol}}$}
+\newcommand{\ppol}[0]{$p_{\text{pol}}$}
+\newcommand{\vffpol}[0]{$\log{(\Phi_{\text{pol}})}$}
+\newcommand{\open}[0]{$\mathcal{O}_{\text{mid}}$}
+\newcommand{\clfrac}[0]{$f_{\text{cl}}$}
+% Allow "Thomas van Noord" and "Simon de Laguarde" and alike to be sorted by "N" and "L" etc. in the bibliography.
+% Write the name in the bibliography as "\VAN{Noord}{Van}{van} Noord, Thomas"
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+
+%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
+
+% Only include extra packages if you really need them. Avoid using amssymb if newtxmath is enabled, as these packages can cause conflicts. newtxmatch covers the same math symbols while producing a consistent Times New Roman font. Common packages are:
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
+
+% Please keep new commands to a minimum, and use \newcommand not \def to avoid
+% overwriting existing commands. Example:
+%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+
+% Title of the paper, and the short title which is used in the headers.
+% Keep the title short and informative.
+\title[Parameter Estimation of the AGN NGC 3783 Using TORMAC]{Light Echo Modeling of the Active Galactic Nucleus NGC 3783 Using TORMAC - WORKING DRAFT - NOT FINAL}
+
+% The list of authors, and the short list which is used in the headers.
+% If you need two or more lines of authors, add an extra line using \newauthor
+\author[Z. Knutson et al.]{
+Zachary Knutson,$^{1}$\thanks{E-mail: \href{mailto:zach.knutson7431@gmail.com}{zach.knutson7431@gmail.com}}
+Triana Almeyda,$^{1}$
+Andrew Robinson$^{2}$
+Sebastian Hönig$^{3}$
+and Jack Gallimore$^{4}$
+\\
+% List of institutions
+$^{1}$Department of Astronomy, University of Florida, 211 Bryant Space Science Center, Gainesville, FL, 32611, USA\\
+$^{2}$School of Physics and Astronomy, Rochester Institute of Technology, 1 Lomb Memorial Drive, Rochester, NY 14623, USA\\
+$^{3}$Department of Physics \& Astronomy, University of Southampton, Southampton, SO17 1BJ, UK\\
+$^{4}$Department of Physics, Bucknell University, Lewisburg, PA 17837, USA
+}
+
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2023}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+% Abstract of the paper
+\begin{abstract}
+%This is a simple template for authors to write new MNRAS papers.
+%The abstract should briefly describe the aims, methods, and main results of the paper.
+%It should be a single paragraph not more than 250 words (200 words for Letters).
+%No references should appear in the abstract.
+When supermassive black holes, found in the center of most galaxies, rapidly consume material, they are known as active galactic nuclei (AGN). This study employs computational modeling to explore the dust structure commonly found around AGN, focusing on one such AGN, NGC 3783. Utilizing the TORMAC code developed by Dr. Triana Almeyda, we generate simulated infrared (IR) light curves based on a 3D ensemble of clouds within a simulated dust structure, using observed optical light curves of NGC 3783 as the input continuum source. We use a Markov Chain Monte Carlo (MCMC) code, written by collaborator Dr. Jack Gallimore, to determine the best-fit parameters of the dust distribution by comparing the simulated IR light curves to the observed IR light curves for NGC 3783. Here we present preliminary results from these simulations and demonstrate their application towards constraining the structure and geometry of NGC 3783. [instead of what was here, add some discussion / key findings] 
+\end{abstract}
+
+% Select between one and six entries from the list of approved keywords.
+% Don't make up new ones.
+\begin{keywords}
+radiative transfer -- galaxies: active
+\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+
+\section{Introduction}  \label{sec:intro}
+\par At the center of most galaxies resides a super massive black hole (SMBH) with masses typically exceeding $10^6M_\odot$. When these SMBHs rapidly accrete surrounding gas and dust, they are classified as active galactic nuclei (AGN). Close to the center of these AGN, fueled primarily by the gravitational potential energy of the infalling material, a relatively small disk (the accretion disk) of super heated plasma emits primarily in the X-ray, ultraviolet (UV), and optical portions of the electromagnetic (EM) spectrum. These AGN have luminosities typically between $10^{40}$ ergs•s-1 and $10^{47}$ erg•s-1 and can, in some cases, exceed the luminosity of the host galaxy. Surrounding this accretion disk is a much larger structure of dust, which, when heated by the accretion disk, emits primarily in the infrared (IR). Understanding the structure and geometry of this dust provides insights into the growth and evolution of SMBHs and how AGN interact more broadly with their host galaxies allowing for a greater understanding of the processes governing galactic evolution. \zach{Need to revise this to be a little more specific. Definitely glossing over a lot of stuff that should be cited/quantified.}
+\par However, due to the milliarcsecond spatial resolution required to directly resolve the inner radius of the dust distributions in even the closest AGN, any attempts to understand the hottest portion of the dust currently require some form of modeling. \zach{Citeeee} Multiple successful attempts have been made to resolve the inner radius of several close AGN utilzing IR interferometry, but this method does not extend well to AGN of higher redshift. {\bf [Cited in Almeyda et al. 2017: Swain et al. 2003; Kishimoto et al. 2009; Pott et al. 2010; Kishimoto et al. 2011; Weigelt et al. 2012], [Cited in Almeyda et al. 2020: e.g., Kishimoto et al. 2011; Burtscher et al. 2013]} \zach{This needs to be expanded to actually say what these people did}
+\par Instead, an alternative approach, based on reverberation mapping, uses both optical and IR wavelengths to bypass the need for high resolution imaging by utilizing the time domain. \zach{Instead of just jumping into saying this method exists, maybe cite a time / the times when this was first used?} The driving principle of dust reverberation mapping is that the IR continuum response is delayed relative to the optical continuum emission since the optical light from the accretion disk must first travel to the dust where it is absorbed and then re-emitted in the IR along the observer’s path. \zach{Theory of reverberation mapping says that 
+Theory of reverberation mapping
+how do we implement it observationally
+how do we extend it to modeling}
+\par Observational reverberation mapping is commonly used to constrain the characteristic size of the torus { \bf [refs]} by determining the average[?] delay between the optical and IR light curves, then converting this time delay into a characteristic radius. In an attempt to gain additional information about the structure and geometry of the circumnuclear dust, we also consider that the total IR response at any given time is a summation of partial responses to the optical emission at all time delays. This means that the optical emission and IR response will not be perfectly correlated. We can instead model the IR response light curve as a convolution of the optical emission with a “transfer function”. This transfer function then would contain information about the structure and geometry of the dust.  
+
+% Extending this principle, we exploit the fact that dust at different radii and at different angles relative to the central source will respond at different times.
+
+% consider that dust at 
+% different radii and at different
+% angle between the cloud and the observer and the angle between cloud and the cenral source. 
+In an attempt to gain more information about the structure, 
+However, since the observed light curve is a convolution with the transfer function
+transfer function contains information about the structure and geometry of the torus
+we can use the transfer function to learn more about the 
+
+Start the other way: we know that from reverberation mapping - transfer function - transfer function contains information - extract that information using modeling 
+
+\par The forward modeling code TORMAC (TOrus Reverberation MApping Code) has previously been employed to simulate the multi-wavelength response from a circumnuclear dust distribution to a delta function “pulse”, emulating that dust configuration’s “transfer function” (Almeyda et al. 2017, 2020). However, it is also capable of generating IR response light curves to observed input optical light curves. \zach{I think you reminded me a while ago that TORMAC has already done this, need to rephrase} In this paper, we utilize TORMAC to extract additional information about the dust structure of a well-studied AGN, NGC 3783.
+\par IR interferometric observations of NGC 3783 have revealed the presence of a hot, compact, disk-like structure, commonly referred to as the “dusty torus” and a cooler, resolved, extended component in the polar regions (GRAVITY Collaboration 2021 {\bf [among others]}). A  significant fraction of the IR emission from NGC 3783 comes from this polar dust structure, which we refer to as the “polar bi-cone". Both IR interferometry and SED model fitting { \bf [reffssss]} have been used to gain information about NGC 3783’s circumnuclear dust, but this paper serves as the first use of light curves to extract additional information about the circumnuclear dust.
+
+% \begin{itemize}
+%     % Which studies have tried? What were their results?
+%     % \item Our approach is based on light echo modeling / reverberation mapping, which uses both optical and infrared (IR) wavelengths to bypass the need for high resolution imaging by utilizing the time domain. 
+%     % \item A driving principal of light echo modeling is that the IR response is delayed since optical light from the accretion disk first travels to the dust before it is re-emitted in IR on the observer's path. 
+%     % \item While observational reverberation mapping is commonly used to constrain the inner size of the torus, we can extend this principle by modeling the IR response over time as a convolution of the input optical data with a transfer function that depends on the dust’s structure and geometry. 
+%     % \item This transfer function is difficult to determine from the observed data, so I utilize a python code TORMAC \citep{almeyda_modeling_2017,almeyda_modeling_2020} to attempt to extract additional information about the dust structure of a well studied AGN, NGC 3783. 
+%     % Obviously need to provide details on what makes NGC 3783 well studied, what information do we already know
+%     % \item NGC 3783 has had some of its torus characteristics constrained through IR interferometry, revealing an inclination that is close to being face-on to the observer \citep{gravity_collaboration_geometric_2021} and a maximum mid-IR radial extent of the dust \citep{as}(Asmus et al., 2014).
+%     % \item AGN have a central disk of superheated gas called the accretion disk, and a dust structure which surrounds the accretion disk, separated into a torus (a donut shaped disk) and a polar bi-cone (a hollow cone at the north and south poles).
+%     % % Add in a brief discussion of the evidence for polar wind
+%     % \item Observations have shown that a significant fraction of the IR emission from NGC 3783 comes from a resolved, extended polar dust structure which is irreconcilable with torus only models. Recently, significant work has been done using {\bf SED?} model fitting to constrain the structure and geometry of this polar outflow. For NGC 3783, kinematic simulations agree on an extended (relative to the size of the torus) biconical outflow with an inclination to the observer LOS of 60-75°, an angular width of about 10°, and an opening angle of 30-45° \citep{fischer_determining_2013,muller-sanchez_outflows_2011}. 
+%     % \item \cite{fischer_determining_2013} uses kinematics simulations for NGC3783 which fit well with an extended biconical outflow with $i_{POL} \approx 75^\circ$ ($i_{TOR} \approx 35^\circ$), $\sigma_{POL} \approx 10^{\circ}$, and $open \approx 50^{\circ}$. These findings are also supported by \cite{muller-sanchez_outflows_2011} which also suggests an extended biconical outflow with $i_{POL} \approx 60^\circ$ ($i_{TOR} \approx 38^{\circ}$) $\sigma_{POL} \approx 7^\circ$, and $open \approx 30^\circ$
+%     % \item This is the first time a time domain radiative transfer model is being used to fit simulated to observed responses for AGN, and our method will be applied to many other reverberation mapped AGN.
+% \end{itemize}
+
+\section{Methods} \label{sec:methods}
+
+\par NGC 3783 has been observed in the B band (optical) as well as the J, H, and K bands (IR response) from 2006 to 2011 with an average cadence of 4.5 days during the observing season \citep{lira_optical_2011}.  These resulting light curves have been host galaxy corrected. Since these light curves contain large gaps between observing seasons, the B band light curve is interpolated using the power spectrum derived from the data. The interpolated B band light curve is used as an input to TORMAC (see Section \ref{sec:codereview}), representing the variations of the central source. The J, H, and K band light curves are compared to the model light curves TORMAC produces. Therefore, it is used as an input to our MCMC parameter estimation code tormacFit. (see Section \ref{sec:tormacFit}). 
+
+% say that we get the data form lira et al, its already host galaxy corrected, all we do is that we feed it into an interpolation code that uses a power spectrum to interpolate so that it doesnt have. Then, we feed it into our code, see Section~\ref{sec:codereview}. then to find the best fits of the parameters, we use tormacFit (see section~\ref{sec:tormacFit}) to see if we can extract any information about the cloud distribution.
+
+%  \par \cite{lira_optical_2011} provides both B band (optical) and J, H, and K (IR response) light curves collected over the course of 5 observing seasons from 2006 to 2011. The optical light curve, first interpolated by using the power spectrum of the data, is used as an input to TORMAC and represents the luminosity of the central source. The IR response light curves are used to compare against the simulated output of TORMAC. 
+
+\subsection{IR Light Curve Model Creation: TORMAC} \label{sec:codereview}
+
+\par Since TORMAC has already been introduced in \cite{almeyda_modeling_2017}, and expanded in \cite{almeyda_modeling_2020}, here we will provide an overview of TORMAC's primary functions and new capabilities. TORMAC simulates the IR response from the circumnuclear dust surrounding AGN as a 3D ensemble of dust clouds, randomly distributed within user defined geometries. TORMAC models the torus as a clumpy, flared disk with linear scale height. Because classical clumpy torus models are unable to model extended polar mid-IR emission from AGNs, TORMAC is now also capable of simulating clumpy polar dust structures. The number of clouds contained within both structures can be defined by the user, with a canonical value of $N_{cl} = 10^5$ being used in all models presented in this paper. The fraction of the clouds which reside in the torus is given by the user defined parameter \clfrac, where \clfrac $= 0$ corresponds to all of the clouds residing in the polar dust structure. Both structures are oriented to the observer by the user defined inclination angle \inc, such that when \inc $=90\degree$, the torus structure is edge on, and when $i=0\degree$, the observer's line of sight passes through the center of the polar dust structure. A cloud's position (in either structure) is defined by its distance from the central illuminating source $r$, its polar angle $\theta$ (where $\theta = 0\degree$ and $\theta = 180\degree$ are defined as the polar axes), and its azimuthal angle $\phi$. 
+
+\par The torus' geometry extends from the dust sublimation radius $R_d$ to an outer radius $R_o$. $R_o$ is determined by the user defined parameter \Y, where \Y $= R_o/R_d$. Radially from the central source, clouds in the torus are arranged following a power-law distribution with user defined index \p, where $N_{cl}(r) \propto r^{p-2}$. The half angular width of the torus is determined by the user defined parameter $\sigma$. In polar angle, clouds follow a Gaussian distribution centered in the equatorial plane ($\theta = 90\degree$) and with standard deviation $\sigma$, such that the polar angle distribution is defined as:
+$$N_{cl}(\theta) \propto \exp[-(\theta - 90\degree)^2/2\sigma^2]$$ 
+The user also must define the fraction of the torus volume which is filled with clouds, \vff. If \vff = 0.01, 1\% of the torus’ volume will contain clouds. 
+
+\par The polar dust structure is modeled as a hollow bi-cone with the user defined opening angle \open. The polar dust is similarly generated based on the analogous user defined parameters \Ypol, \ppol, \sigpol, and \vffpol. Radially, the polar dust extends from $R_d$ to $R_{o,pol}$, with \Ypol $= R_{o,pol}/R_d$. Clouds in the polar dust are also arranged following a power-law distribution with $N_{cl}(r) \propto r^{p_{\text{pol}}-2}$. However, in polar angle, the distribution of polar dust clouds is the sum of two Gaussian distributions, centered at $\theta = 0 + \mathcal{O}_{mid}$ and $\theta = 180 - \mathcal{O}_{mid}$. Both Gaussian distributions have standard deviation \sigpol. This yields the polar angle distribution:
+$$N_{cl}(\theta) \propto \exp[-(\theta - \mathcal{O}_{mid})^2/2\sigma_{\text{pol}}^2] + \exp[-(\theta - (180\degree - \mathcal{O}_{mid}))^2/2\sigma_{\text{pol}}^2]$$
+
+% by the ratio of the outer to inner polar radius ($Y_{\text{pol}}$) and a half angular width ($\sigma_{\text{pol}}$). In addition, the polar bi-cone is constrained by a half opening angle ($\mathcal{O}_{mid}$), measured from the polar axis. Both distributions are oriented using a single inclination $i$ (the torus is face-on when i = $0\degree$). Figure~\ref{fig:parameter_summary} is provided as a summary of these parameters.
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{parameter_summary}
+ \caption{}
+ \label{fig:parameter_summary}
+\end{figure}
+
+% \par Radially from the central source, clouds in both structures are arranged following a power-law distribution with index $p$ (and $p_{\text{pol}}$, for disambiguation). In polar angle ($\theta$), the clouds in the torus follow a Gaussian distribution centered in the equatorial plane. Also in polar angle ($\theta$), the bi-cone's clouds follow a Gaussian distribution centered at the opening angle $\mathcal{O}_{mid}$). The standard deviation of both Gaussian distributions are defined by $\sigma$ (or $\sigma_{pol}$) for the torus and bi-cone, respectively. The sizes of the clouds in each structure are defined by the volume filling factor $\Phi$ \& $\Phi_{pol}$, which is defined by fraction of the volume of all of the clouds in that dust structure. If $\Phi$ = 0.01, 1\% of the torus’ volume will be taken up by clouds. 
+\par The dust clouds are heated either directly by the UV/optical continuum emitted from the accretion disk or, if shadowed \zach{what is shadowing?}, indirectly by the diffuse radiation field produced by the directly illuminated clouds. The illuminating AGN radiation field may be anisotropic, due to “edge darkening” of the accretion disk. Therefore, the AGN luminosity is assumed to have the following polar angle dependence:
+$$L(\theta) = \left[s + (1 - s)(1/3)(1 + 2 \cos{\theta})\cos{\theta}\right]L_{\text{AGN}}$$
+(see Netzer 1987), where $L_{\text{AGN}}$ is the isotropic bolometric luminosity of the AGN and the "softening parameter" $s$ determines the degree of anisotropy with an $s$ value of 1.0 corresponding to isotropic illumination. In the isotropic case, $R_d$ is a constant value, only dependent on the dust's sublimation temperature $T_{\text{sub}}$. However, in the anisotropic case $s < 1$, $R_d$ is instead a function of both the dust sublimation temperature, $T_{\text{sub}}$, and $\theta$. For the purposes of calculating $R_o$, the isotropic $R_d$ is always used in the expression of \Y.
+
+[{\bf Insert brief overview of new grain stuff}] \zach{This needs to contain a reference to sebs paper so we can talk about the cloud grids.} \zach{Also needs to have the dust sublimation radius equation}
+
+% From A20: The dust grain composition is a standard Galactic ISM mix of 53\% silicates and 47\% graphites assuming the Mathis-Rumpl-Nordsieck (Mathis et al. 1977) grain size distribution. Given an input AGN optical light curve, the observed cloud emission is determined by taking into account the AGN illumination (which may be anisotropic), light-travel delays within the torus, cloud shadowing, and cloud occultation effects. The torus luminosity at selected IR wavelengths is computed at each observer time step by summing over all clouds in order to produce an IR light curve for each wavelength. The TORMAC model parameters are summarized in Table 1, which also lists the values of those parameters used in the simulations presented in this paper. The models discussed in Sections 4 and 5 explore specific axes of the multi-dimensional parameter space rather than sampling all possible combinations. Therefore, we define a “standard” set of parameter values, which are the values of the parameters that are held fixed when other parameters are varied. These are indicated in bold type in the table.
+
+\par TORMAC also calculates the anisotropic emission from individual clouds, as the illuminated face of a cloud will have a higher temperature than the non-illuminated side, see Section 2.4 of \cite{almeyda_modeling_2017}. Additionally, the emission from any given cloud is also subject to two “global” opacity effects. The first is cloud shadowing, whereby an outer cloud has its line of sight to the central AGN continuum source blocked by one or more inner clouds, closer to the central source. Clouds that are shadowed in this way are heated indirectly by the diffuse radiation emitted by surrounding directly illuminated clouds (see \cite{almeyda_modeling_2017}). Between \cite{almeyda_modeling_2020} and this paper, the implementation of cloud shadowing in TORMAC has changed, and is described in detail in Section~\ref{sec:cloudcounting}. The second is cloud occultation, whereby the emitted spectrum of a cloud may be attenuated by clouds intervening along the line of sight to the observer (see Section 2.1 in \cite{almeyda_modeling_2020}). \zach{I definitely think this paragraph should move before the description of illumination, thoughts?}
+
+% \begin{itemize}
+%     \item TORMAC simulates both the torus and the polar bi-cone as a 3D ensemble of clouds. 
+%     \item The distribution’s structure and geometry is defined by parameters (described below) which we vary to create a set of models. 
+%     \item TORMAC considers radiative transfer by interpolating within a pre-computed grid of radiative transfer models of optically thick clouds.
+%     \item TORMAC considers factors such as dust cloud orientation, occultation, shadowing, and dust sublimation \citep{almeyda_modeling_2017,almeyda_modeling_2020}.
+% \end{itemize}
+\subsubsection{Modified Cloud Shadowing}  \label{sec:cloudcounting}
+
+\par In \cite{almeyda_modeling_2017,almeyda_modeling_2020}, an analytic approximation is used to calculate the probability that a cloud at a given radius will be shadowed. While this approximation may be sufficient for many cases, it often overestimates the number of clouds shadowed, with some extreme cases exacerbating this effect. In the past, TORMAC has used this probabilistic approach to reduce model execution time, but due to general improvements in TORMAC's model execution time, it has become computationally feasible to accurately determine which clouds are shadowed.
+
+We compute each cloud's shadow as a cone that extends from its surface to infinity with a constant solid angle as observed from the central source. To determine if a given cloud is shadowed, we determine which of these cones the cloud intersects, and the area of intersection is calculated and summed. A cloud is considered shadowed if its intersection area is greater than 50\% of its total area. If a cloud is considered shadowed, it will only be illuminated by diffuse radiation, whereas if it is not shadowed, it will only be directly illuminated by the central source. \zach{Make clear that intersection area must be greater than 50\% for an individual cone not the sum} For shadowed clouds, the total intersection area is then used to compute the cloud's attenuated radius from the central source according to the equation
+$$R_{\text{att}} = R_{\text{cl}} \cdot \exp{\left(A_{\text{int}}/2A_{\text{cl}}\right)}$$
+where $R_{\text{cl}}$ is the physical radius from the central source of the cloud, $A_{\text{int}}$ is the total intersection area, and $A_{\text{cl}}$ is the area of the cloud. The attenuated radius is then used to determine the amount of diffuse radiation expected, based off of a precomputed cloud grid. \zach{What is this precomputed grid? Say that it is based off of the clouds distance and wavelength} \zach{need to better explain what the "attenuated radius" means}
+
+% Instead of estimating the probability that a given cloud is shadowed, we treat each cloud's shadow as a cone that extends from its surface out to infinity with a constant solid angle as observed from the central source. For each cone a cloud intersects, the area of intersection is calculated and summed. This total area of intersection is used to determine the amount of diffuse radiation a shadowed cloud is expected to receive based on a precomputed cloud grid, see Section 2.4.2 of \cite{almeyda_modeling_2017}. If a cloud's intersection area is greater than 50\% of that cloud's area, then it is considered shadowed, and will only be illuminated by diffuse radiation, whereas clouds with less than 50\% intersection area will only be illuminated directly by the central source.
+
+% Using this space to define my parameters (especially the new ones)
+%Briefly describe *how* TORMAC works? (mention stuff like shadowing, occultation) Or just describe *what* TORMAC does? (takes input lightcurve, makes IR light curves, uses cloud radiation grids)
+% \begin{itemize}
+%     \item Angular width ($\sigma$, $\sigma_{POL}$): Thickness of the torus and bi-cone, typically 5-45°. 
+%     \item Radial extent ($R_o/R_d = y$, $y_{POL}$): Outer radius Ro, over the inner radius Rd. Rd is the average dust sublimation radius, Ro is the furthest radial distance clouds will be placed, typically 2-500 times larger than Rd.
+%     \item Inclination ($i$): Angle from the polar axis to the observer. 0° = face on, 90° = edge on.
+%     \item Radial dust distribution ($p$,$p_{POL}$): Power law that determines the radial placement of clouds. Negative p favors small radii, positive p favors large radii.
+%     \item Dust density ($\Phi$, $\Phi_{POL}$): Determines the amount of the volume which contains clouds, typically -1 to -4 (10\% to 0.01\% of the total volume).
+%     \item Opening angle (open): Angle between polar axis and the middle of the cone’s dust.
+%     \item Cloud distribution (clfrac): Number of clouds in the torus versus the bi-cone. 1.0 = all clouds in torus, 0.0 = all clouds in bi-cone. 
+%     \item Softening parameter (sp): Ratio of accretion disk luminosity face on to edge on, with 1.0 being perfectly isotropic and 0.1 being an anisotropic case.
+    
+%     %Add in the rest of the parameters 
+%     %Make a more official looking figure for these parameters?
+% \end{itemize}
+
+% \subsection{Code Improvements}
+% \par The main components of TORMAC are discussed in detail in \cite{almeyda_modeling_2017,almeyda_modeling_2020}, so here I will introduce the new improvements made to TORMAC, and some general model settings which can be eliminated from our model grids. 
+% \begin{itemize}
+%     \item I decreased TORMAC’s per model execution time from 2 hours to under a minute, a 12,000\% improvement.
+%     %Only should be mentioned as part of justifying the new cloud counting code and probably more vaguely than this (nobody cares about the 12000% figure but us) 
+% \end{itemize}
+
+\subsection{MCMC Model Fitting Using tormacFit} \label{sec:tormacFit}
+
+\zach{Would probably be better to say something along the lines of: To rapidly sample the goodness of fit of our models across the parameter space to the ground truth observed data, we use mcmc...}As a way to estimate the constraints on the parameters for which we generate TORMAC models, we employ Markov Chain Monte Carlo (MCMC) modeling to fit the IR response models generated by TORMAC to the observations. We use a code entitled tormacFit, which is a heavily modified version of clumpyDREAM \citep{sales_embedded_2015}, to perform the MCMC search. \zach{Probably should just cite pydream} The fitter calculates the likelihood using a $\chi^2$ test using all of the points in the observed light curve. \zach{Can revise this to better show mathematically what our log liklihood looks like} Since TORMAC is capable of calculating light curves for multiple wavelengths, and multiple observed wavebands (J, H, and K) are available for NGC 3783, tormacFit was made to handle multi-wavelength fitting. The likelihoods calculated for each wavelength are multiplied to arrive at the final likelihood used for the MCMC search. \zach{Can just say that the code jointly fits the wavelengths} For all of the posterior distributions presented in Section \ref{sec:results}, we fit to both the H and K bands. We were unable to properly fit the light curves to the J band, explained in Section \ref{sec:discussion}. \zach{This is a poor location to put this info...}
+
+We introduce two additional parameters to our MCMC search: log(amp) and Sys. Unc. (\%). The log(amp) parameter is a monochromatic scaling factor applied to the model lightcurve, used to . log(amp) values far from unity represent limitations of TORMAC to reproduce the true observed flux, or additional sources of extinction which have not been considered. The Sys. Unc. (\%) parameter is systematic uncertainty added to the uncertainty on the fluxes for the observed light curve, and represents additional random, yet unexplained fluctuations introduced during reprocessing of the optical radiation. \zach{this is not a good way to explain systematic uncertainty}
+
+To perform the MCMC search, we calculate a set of TORMAC models which sample the parameter space on a regular grid. For MCMC proposal evaluations which do not lie on one of these grid points, the model light curve is nd-linearly interpolated between adjacent grid points. Therefore, we impose that all of our model grids are “regular”, meaning that the set of models we run is the cartesian product of all of the sets containing a respective parameter’s values to be tested, i.e., there are no gaps in the grid. 
+% \begin{itemize}
+%     \item Markov Chain Monte Carlo (MCMC) analysis through clumpyDREAM \citep{sales_embedded_2015} allows us to match the observed IR response from \citet{lira_optical_2011} and the simulated IR responses from the set of TORMAC models.
+%     \item tormacFit accepts input observed light curves and a set of TORMAC simulated light curves, and outputs a set of posteriors corresponding to the strength of the fit at that coordinate. 
+%     \item tormacFit interpolates between models to fill in the posteriors between grid coordinates. 
+%     \item tormacFit can be used to fit multiple wavelengths simultaneously, returning posteriors which take into account the fit of all wavelengths used.
+%     %Brief summary of *how* clumpyDREAM works?
+% \end{itemize}
+\section{Results of MCMC Parameter Estimation} \label{sec:results}
+\begin{table*}
+    \caption{Parameter values used to construct the torus only model grid. Parameter values represent points on a regular grid with no gaps, ie. all possible combinations of parameters are evaluated. \textsuperscript{1} only grid(s) which allow for uncapped polar cloud sizes. \textsuperscript{2} note that the polar parameters are proportional to the torus, ie. \Y 10 and \Ypol 20 was run, \Y 10 \Ypol 50 was not run. \textsuperscript{3} right now only for \clfrac 0.333.}
+    \label{tab:torus_only_params}
+    \centering
+    \begin{tabular}[c]{c@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}c}
+        \hline
+        \hline
+        Parameter & Torus Only & Torus \& Prop. Polar\textsuperscript{2} & Torus Conf. 1 & Torus Conf. 2 & Fig 6 & Fig 7 & Fig 8,9,10\textsuperscript{1}\\
+        \hline
+        \hline
+        \Y&10, 25, 50, 75, 100, 500&10, 25, 50, 75, 100&10&25&5, 50, 100&5, 10, 25, 50, 100&2, 5, 10, 25, 50\\
+        \hline
+        \sig&5, 10, 30, 45&5, 10, 30, 45&5&5&5, 25, 45&5, 10, 15, 25&2, 5, 10, 20\\
+        \hline
+        \p&-2, -1, 0, 1, 2&-2, -1, 0, 1, 2&1&0&-2, 0, 2&-2, 0, 2&-1, 0, 1, 2\\
+        \hline
+        \vff&-1, -2, -3, -4&-1, -2, -3, -4&-2&-4&-1, -2, -3, -4&-1, -2, -3, -4&-1, -2, -3, -4\\
+        \hline
+        \inc&0, 30, 45, 60, 90&0, 30, 45, 60, 90&\multicolumn{2}{c}{20, 50, 100, 150, 200}&0, 30, 45, 60, 90&0, 30, 45, 60, 75&0, 30, 45, 60, 75\\
+        \hline
+        \soft&1.0 (iso), 0.1 (aniso)& 1.0, 0.1&0.1&0.1&1.0, 0.1&0.1&1.0\textsuperscript{3}, 0.1\\
+        \hline
+        \Ypol&--&20, 50, 100, 150, 200&\multicolumn{2}{c}{20, 50, 100, 150, 200}&5, 100, 200&5, 50, 100, 200&5, 50, 100\\
+        \hline
+        \sigpol&--&2, 4, 12, 18&\multicolumn{2}{c}{2, 4, 12, 18}&2, 5, 10, 15&2, 10, 20\\
+        \hline
+        \ppol&--&-2, -1, 0, 1, 2&\multicolumn{2}{c}{-2, -1, 0, 1, 2}&-2, 0, 2& -1, 0, 1, 2\\
+        \hline
+        \vffpol&--&-1, -2, -3, -4&\multicolumn{2}{c}{-1, -2, -3, -4}&-1, -2, -3, -4&-1, -2, -3, -4&-1, -2, -3, -4\\
+        \hline
+        \open&--&10, 30&\multicolumn{2}{c}{10, 30}&10, 22.5, 35&22.5, 35, 45&10, 25, 40\\
+        \hline
+        \clfrac&--&?&\multicolumn{2}{c}{0.333, 0.5, 0.667, 0.9}&0.333&0.333?, 0.667?&0.333, 0.667\\
+        \hline
+        numclouds&50000&50000&50000&50000&100000&100000&100000
+    \end{tabular}
+\end{table*}
+%Because of the exponential nature of multidimensional parameter spaces, we must choose a small sample of the total parameter space due to computational cost. Our sampling method first involves running a set of models, then interpreting the results before deciding on the next set of models to run. With each set of models, the hope is to gain information which allows us to constrain the best fit parameter space, iteratively refining our results.
+
+\par As discussed in Section~\ref{sec:codereview}, TORMAC is able to model the IR response from an AGN, producing the response IR light curve from the input optical light curve. In Section~\ref{sec:discussion}, we present some of the simulated responses to optical light curves from \cite{lira_optical_2011} of NGC 3783. Instead, in this section, we focus on the resulting parameter estimations from a variety of modeled dust cloud distributions to the observed light curves. The dust distributions and number of free parameters grow in complexity throughout the section in order to individually investigate the influence in adding the more complex dust distributions to the parameter estimations/fits. \zach{Dont know what to say instead but feel like can justify better why increasing complexity} For instance, in Section~\ref{sec:torus_only_models} we explore the model fits of a torus only dust distribution. In Section~\ref{sec:introduction_of_polar_dust}, we explore the inclusion of a polar distribution while reducing the overall complexity of the grids first by generating a grid that ties the TORMAC parameters of both components, then by generating a grid that varies the polar components while keeping the torus components fixed. Lastly, Section~\ref{sec:parameter_estimation} contains model grids that vary all of the available parameters in both cloud distributions to properly sample the entire possible parameter space.
+
+% \begin{itemize}
+%     \item Here I present findings from three sets of TORMAC models each containing between 5,000 and 30,000 models, and each still only sampling a small fraction of the total parameter space.
+%     \item The first set only has a torus, while the second and third sets are also have a polar bi-cone. 
+%     \item In the second set, the torus and bi-cone parameters are mirrored to reduce the number of free parameters.
+%     \item In the third set, a fixed torus structure is used and only bi-cone parameters are varied.
+%     \item I present posteriors from these fits as well as simulated IR responses generated by TORMAC. 
+%     \item Convolution of the input light curve primarily happens through three general modes, being the amplitude of the response, the time lag of the response, and a third mode which encapsulates all of the "distortion" caused by deviations from a delta transfer function(s). It is worth noting that these modes are not independent (ie. modifying the form of the transfer function(s) also modifies the amplitude and time lag). Since the form of the transfer function has a relatively small influence on the overall shape of the light curve, we would expect that the amplitude and time lag are constrained first, and that the strongest constraints would be found on the parameters which most dramatically influence these factors.
+%     % I like this paragraph but I'm curious what you think. I think it can really help explain why some parameters we get strong constraints early on while others still hit a wall. ex. sigma only really influences the *shape* of the transfer function (it primarily spreads it out with increasing sigma), and the time lag only slightly, thus we dont really get any constraints on it until the end when the amplitude and time lag are pretty well dialed in, and even then the constraints are pretty wide.
+%     %after reading the above comments, let me guess: discussion section? :P
+% \end{itemize}
+\subsection{Torus Only Models} %Grid 1
+\label{sec:torus_only_models}
+
+\par AGN circumnuclear dust has typically been modeled as a single compact disk component. We investigate if a single torus component will yield model IR light curves that sufficiently match the observed IR light curves. \zach{also have a hunch can say this better} The geometric parameters of the torus (\Y, \sig, \inc, and \soft) as well as the structural parameters (\p and \vff) were varied independently, such that all possible combinations of the parameter values are sampled, herein referred to as a "regular grid". The grid is finely sampled over these parameters, with a complete set of parameter values enumerated in Table~\ref{tab:torus_only_params}. No priors were applied in the analysis of this grid, and the ranges of these parameters represent generous limits as to sample all reasonably possible torus combinations. \zach{Uniform priors not no priors also move to sec 2.2 also bad phrasing on the last part of this sentence}
+
+% \begin{table}
+%     \caption{Parameter values used to construct the torus only model grid. Parameter values represent points on a regular grid with no gaps, ie. all possible combinations of parameters are evaluated.}
+%     \label{tab:torus_only_params}
+%     \centering
+%     \begin{tabular}[c]{@{\hskip 0.2in}c@{\hskip 0.7in}c@{\hskip 0.2in}}
+%         \hline
+%         \hline
+%         Parameter & Values\\
+%         \hline
+%         \hline
+%         $Y$& 10, 25, 50, 75, 100, 500\\
+%         \hline
+%         $\sigma$& 5, 10, 30, 45\\
+%         \hline
+%         $p$& -2, -1, 0, 1, 2\\
+%         \hline
+%         $\Phi$& 0.1, 0.01, 0.001, 0.0001\\
+%         \hline
+%         $i$& 0, 30, 45, 60, 90\\
+%         \hline
+%         $\text{s}$& 1.0 (iso), 0.1 (aniso)\\
+%         \hline
+%     \end{tabular}
+% \end{table}
+\par From this grid, tormacFit was used to compute two separate sets of posterior distributions, corresponding to the isotropic models (\soft = 1.0) and the anisotropic models (\soft = 0.1). This was done to distinguish the influence from the type of illumination of the dust distribution from the rest of the parameters. The posterior distributions generated from the isotropic models are shown in Figure~\ref{fig:torus_only}. 
+\par In the top right panel of Figure 1, the volume filling factor (\vff), shown in log, is tightly constrained, with most samples ranging between 0.6\% and 0.3\% of the torus’ volume containing clouds. In the left panel of the second row, the radial cloud distribution (\p) is also tightly constrained around \p = 1. In the center panel, the inclination of the torus is also constrained to between approximately $57\degree$ and $67\degree$ (moderately inclined). In contrast, the right panel of the second row corresponding to the radial extent of the disk (\Y), is unconstrained as most samples tend to favor models at the lower bound of the parameter space ($Y \simeq 10R_d$) explored. Similarly, in the bottom left panel, the angular width of the torus (\sig) is also unconstrained, with most samples also favoring the lower bound of the parameter space (\sig $\simeq 5\degree$). \zach{want to do something like above with all other grid. Give specific and general info. want to format it sorta like X is Y+-Z, which is very constrained.}
+\par Both parameter estimations generally favor a compact (low \Y), thin (low \sig), torus with clouds taking up of order 0.1\% to 1\% of the torus volume (moderate \vff). They also favor a moderately inclined torus with the clouds somewhat centrally distributed in volume (\p $\approx 1$). The results from a torus only dust distribution showed that some of our parameters did not converge and favored the lower edge of the explored parameter space (notably \Y and \sig). Therefore, the models with a torus only component are not sufficient to explain the observed light curves and we widened our parameter space by including a polar dust distribution in addition to the torus. \zach{this is not WHY the models cannot explain the observed light curves, it is that there is a large amount of systematic error in our lightcurve still! Would be good to quantify the goodness of fit (we can do this)}
+
+% \begin{itemize}
+%     \item need to talk about isotropic vs anisotropic at some point
+%     \item wavelength dependence is important
+% \end{itemize}
+
+% \begin{itemize}
+%     \item We began our analysis by running a set of models which only includes a torus, with the parameters run listed in Table~\ref{tab:G1A}
+%     \item These parameter values represent a reasonable limit for what TORMAC is capable of simulating, intended to represent all of the possible torus configurations.  We find that in many of the parameters tested, no best fit was found inside the parameter space explored (signified by the posteriors peaking at the edge of the parameter space). Clearly, $p$, $i$, and $\sigma$ exhibit this behavior.
+%     \item The most important of these is $i$, as it makes no physical sense to have an inclination greater than $90^\circ$
+%     \item The only parameters which could be argued to have constraints are $\Phi$ and $Y$. 
+%     \item $\Phi$ has its primary impact on the amplitude of the response. %because of the way we normalized, increasing vff beyond a point results in saturation which decreases the response amplitude, if normalized differently vff would increase the amplitude of the response. 
+%     \item $Y$ has its primary impact on the time lag of the response (strongly wavelength dependent).
+%     \item It can clearly be concluded that a torus only model is not a strong predictor of the behavior of the IR response of NGC 3783, only able to superficially match the amplitude and time lag.
+%     % I think Im stuck here. Im not sure if there is anything else I should be talking about in these sections? (goes for all of results)
+% \end{itemize}
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{G1CCA}
+ \caption{Posterior distribution generated by iterating tormacFit on the isotropic models from the initial torus only grid of models. Bar height corresponds to posterior probability. log(amp) and Sys. Unc. (\%) represent the free parameters introduced in Section~\ref{sec:tormacFit}, while the remaining panels enumerate all of the free parameters of the grid (see Table~\ref{tab:torus_only_params}). \zach{Why only showing isotropic?}}
+ \label{fig:torus_only}
+\end{figure}
+
+\subsection{Introduction of Polar Dust} %Grid 2
+\label{sec:introduction_of_polar_dust}
+% \begin{table}
+%     \caption{Parameter values used to construct the torus \& proportional polar dust model grid, similar to \ref{tab:torus_only_params}. Parameters on the same line are evaluated together. Note the additional parameter, $\mathcal{O}_{\text{mid}}$.}
+%     \label{tab:prop_polar_params}
+%     \centering
+%     \begin{tabular}[c]{@{\hskip 0.2in}c@{\hskip 0.7in}c@{\hskip 0.2in}}
+%         \hline
+%         \hline
+%         Parameter & Values\\
+%         \hline
+%         \hline
+%         $Y$/$Y_{\text{pol}}$& 10/20, 25/50, 50/100, 75/150, 100/200\\
+%         \hline
+%         $\sigma$/$\sigma_{\text{pol}}$& 5/2, 10/4, 30/12, 45/18\\
+%         \hline
+%         $p$ \& $p_{\text{pol}}$& -2, -1, 0, 1, 2\\
+%         \hline
+%         $\Phi$ \& $\Phi_{\text{pol}}$& 0.1, 0.01, 0.001, 0.0001\\
+%         \hline
+%         $i$& 0, 30, 45, 60, 90\\
+%         \hline
+%         $\text{sp}$& 1.0 (iso), 0.1 (aniso)\\
+%         \hline
+%         $\mathcal{O}_{\text{mid}}$& 10, 30\\
+%     \end{tabular}
+% \end{table}
+
+\par In our second model set, we explore a dust distribution with both torus and polar dust components. One of the largest challenges with sampling the torus and polar dust parameter space is that many more degrees of freedom are introduced. We choose to reduce the number of free parameters by equating the relevant polar parameters to the equivalent torus parameters. For instance, in Table~\ref{tab:prop_polar_params}, \p/\ppol, \Y/\Ypol, \sig/\sigpol, and \vff/\vffpol have been paired, reducing the number of free parameters from 11 to 7. While we do not necessarily expect these parameters to be this correlated in AGN, this model grid is an initial attempt to introduce polar dust into our parameter estimation without adding too many degrees of freedom at once.
+
+\par In addition to the parameters which define the polar dust distribution, an additional parameter, opening angle (\open) is also introduced (see Section~\ref{sec:codereview}). 
+
+\par Similar to the previous torus only models, tormacFit was run for both the isotropic models and the anisotropic models, producing two different posterior distributions. In Figure~\ref{fig:torus_prop_polar}, we only show the posterior distribution results from the isotropic models. \zach{Why?}
+\par Compared to the posterior distributions shown in Figure~\ref{fig:torus_only}, adding the proportional polar dust distribution resulted in a larger but more centrally located cloud distribution (lower \p \& \ppol, higher \Y \& \Ypol), a lower density (low \vff \& \vffpol), and higher inclinations (edge on) being favored. These models also support larger opening angles. \zach{Should I expand the best fit ranges for all of the grids or make them all like this?}
+
+\par Despite the introduction of a polar dust distribution, \sig, and now \inc, \vff, and \open are now unconstrained, with most models favoring edge of the explored parameter ranges. \zach{particularly dont like saying "most models favor the edge" can say this differently} We therefore determine that a torus and wind distribution with each of their respective parameters tied in value to each other is not sufficient to determine a unique, physically realistic fit to the data. Next, we explore varying more parameters of the polar dust structure.
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{G2CCA}
+ \caption{Like Figure~\ref{fig:torus_only}, this posterior distribution represents the results generated by tormacFit using the torus and proportional wind model grid. Note the additional parameter "\open". Because the wind parameters are proportional to the torus parameters, only the torus parameters are shown, but the wind parameters can be derived by comparing the posteriors with Table~\ref{tab:prop_polar_params}.}
+ \label{fig:torus_prop_polar}
+\end{figure}
+
+\par In the next set of models, we vary the polar dust structure parameters while holding the torus structure fixed. Table~\ref{tab:tori} shows the parameters of the grids of models were generated for each of the two fixed tori examined. The two torus configurations were determined from the peak of the posterior distributions of the previous model grids. The wind parameter values match the parameter values examined in the previous set of models. In addition, we add another free parameter, the cloud fraction, defined as \clfrac, corresponding to the fraction of clouds present in the torus versus the wind distributions. In the previous model grids, we adopted a standard of 67\% of the clouds in the torus, and 33\% of the clouds distributed equally between the top and bottom sections of the polar bi-cone. A cloud fraction of 1 represents all of the clouds residing in the torus, while a cloud fraction of 0 represents placing all of the clouds in the polar bi-cone. \zach{isnt this already in the code review?}
+
+% \begin{table}
+%     \caption{Similar to Table~\ref{tab:torus_only_params} and Table~\ref{tab:prop_polar_params}, contains the parameter values for each of the two torus configurations analyzed. Values which span both torus columns correspond to the wind parameters varied for both tori.}
+%     \label{tab:tori}
+%     \centering
+%     \begin{tabular}{ccc}
+%         \hline
+%         \hline
+%         Parameter & Torus 1 & Torus 2\\
+%         \hline
+%         \hline
+%         $Y$& 10 & 25\\
+%         \hline
+%         $\sigma$& 5 & 5\\
+%         \hline
+%         $p$ & 1 & 0\\
+%         \hline
+%         $\Phi$ &0.01 & 0.0001\\
+%         \hline
+%         $\text{sp}$& 0.1 & 0.1\\
+%         \hline
+%         $i$& \multicolumn{2}{c}{0, 30, 45, 60, 90}\\
+%         \hline
+%         $Y_{\text{pol}}$& \multicolumn{2}{c}{20, 50, 100, 150, 200}\\
+%         \hline
+%         $\sigma_{\text{pol}}$& \multicolumn{2}{c}{2, 4, 12, 18}\\
+%         \hline
+%         $p_{\text{pol}}$& \multicolumn{2}{c}{-2, -1, 0, 1, 2}\\
+%         \hline
+%         $\Phi_{\text{pol}}$& \multicolumn{2}{c}{0.1, 0.01, 0.001, 0.0001}\\
+%         \hline
+%         $\mathcal{O}_{\text{mid}}$& \multicolumn{2}{c}{10, 30}\\
+%         \hline
+%         $f_{\text{cl}}$& \multicolumn{2}{c}{0.333, 0.5, 0.667, 0.9}\\
+%     \end{tabular}
+% \end{table}
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{G3T1A}
+ \caption{The posterior distribution for the wind of "Torus 1". Produced using the same method as Figure~\ref{fig:torus_only} \& \ref{fig:torus_prop_polar}. Note the additional new parameter: \clfrac, the cloud fraction.}
+ \label{fig:G3T1A}
+\end{figure}
+\begin{figure}
+ \includegraphics[width=\columnwidth]{G3T2A}
+ \caption{The posterior distribution for the wind of "Torus 2". Compliment to Figure~\ref{fig:G3T1A}, produced using the same method and containing the same parameters.}
+ \label{fig:G3T2A}
+\end{figure}
+
+\par Both posterior distributions, Figure \ref{fig:G3T1A} ("Torus 1") and Figure \ref{fig:G3T2A} ("Torus 2"), were generated using tormacFit by the same method as the previous model grids. We find that the wind distributions for both torus configurations vary significantly from the "proportional" parameter values tested before. In particular, Torus 1 shows significant bimodality in its inclination posterior distribution, favoring both lower, moderate inclinations (\inc $\approx 30$) as well as higher inclinations (\inc $\approx 60$). This bimodal degeneracy can be seen across multiple parameters. For both torus configurations, but especially Torus 1, more of the posterior samples fall within the parameter space. Still, \open (Torus 1 \& 2) as well as \vffpol, \Ypol, and \clfrac (Torus 2) favor the edge of the parameter space. Despite using a torus based on the peak of the previous model grid's posteriors, the modification of Torus 2's wind modified the most favored inclination from completely edge on to a more moderate inclination.
+\par Generally, the most samples across both posterior distributions favor an extended wind (roughly 10 times larger than the torus for Torus 1, and roughly twice as large as the torus for Torus 2) and a moderately centrally located polar cloud distribution (\ppol $\approx 0$). Torus 1's wind is better constrained, demonstrated by the narrower peaks in multiple parameters across the posterior distributions. Both winds favor a large fraction of the clouds residing in the wind.
+% \begin{itemize}
+%     \item One of the largest challenges with sampling the torus and wind parameter space is that many more degrees of freedom are introduced. To conform to computational constraints, we choose to reduce the number of free parameters by modeling the relevant wind parameters as "proportional" to the equivalent torus parameter. As can be seen in Table~\ref{tab:prop_wind_params}, $p$/$p_pol$, $Y$/$Y_{pol}$, $\sigma$/$\sigma_{pol}$, and $\Phi$/$\Phi_{pol}$ are all treated in this manner. %I think we should add a comment saying that we do not necessarily expect that these values would be tied together but it was used to as a starting point to intruduce the polar dust structure without adding more free parameters.
+%     \item Two new parameters are also added, being the opening angle and the cloud fraction.
+%     \item As seen in Figure~\ref{fig:G2AA}, the posterior fits for $i$, $Y$, and $\sigma$ hit the same parameter space edge as seen in the torus only models. The posterior for $\Phi$ also hits the edge but favors the smaller values of the range explored versus the higher values it favored in the torus only models. We also see that these models which include a polar dust distribution found a $p$ value of 0 to be more favorable and is no longer favoring the edge of the parameter space with $p=-2$. Lastly, we do also see that this model set seemed to favor a larger opening angle. However, it is not clear if it is also being limited by the parameter range we explored. 
+%     \item It can also be concluded that a "proportional wind" model does not strongly predict the IR response behavior
+% \end{itemize}
+
+\subsection{Variable Torus and Polar Dust Models}
+\label{sec:parameter_estimation}
+
+\par In Sections~\ref{sec:torus_only_models} and \ref{sec:introduction_of_polar_dust}, we have shown that trying to limit the number of free parameters does not enable us to conclusively constrain the model fits to our data of NGC 3783. Thus, we decided to vary all of the simulation parameters simultaneously. Due to the much larger number of possible models to run we also decided to adopt some priors. \zach{still already had priors before, just uniform. figure out the right word for what we're adding here} First, we limited the inclination to be \inc $< 75\degree$, since for \inc $> 75\degree$ NGC 3783 would not have been able to be reverberation mapped (see Section~\ref{sec:discussion}). Additionally, we chose to not explore models beyond \Y = 100 due to the unphysically large clouds that the \Y $>100$ models produce and that these models have never been favored in the previous posteriors. We chose to utilize a fixed cloud fraction of 0.333 (placing 1/3 of the clouds in the torus, with the other 2/3 being evenly distributed in both of the polar bi-cone). Finally, we increased the number of clouds in each simulation from 50,000 to 100,000. All of the parameter values (both varied and fixed) are enumerated in Table~\ref{tab:pe1}.
+
+% \begin{table}
+%     \caption{table for grid 4}
+%     \label{tab:pe1}
+%     \centering
+%     \begin{tabular}[c]{@{\hskip 0.1in}c@{\hskip 0.1in}c@{\hskip 0.1in}}
+%         \hline
+%         \hline
+%         Parameter & Values\\
+%         \hline
+%         \hline
+%         $Y$& 5, 50, 100\\
+%         \hline
+%         $Y_{\text{pol}}$& 5, 100, 200\\
+%         \hline
+%         $\sigma$& 5, 25, 45\\
+%         \hline
+%         $\sigma_{\text{pol}}$& 2, 5, 10\\
+%         \hline
+%         $p$ & -2, 0, 2\\
+%         \hline
+%         $p_{\text{pol}}$& -2, 0, 2\\
+%         \hline
+%         $\log(\Phi)$& -1, -2, -3, -4\\
+%         \hline
+%         $\log(\Phi_{\text{pol}})$& -1, -2, -3, -4\\
+%         \hline
+%         $i$& 0, 30, 45, 60, 90\\
+%         \hline
+%         $\mathcal{O}_{\text{mid}}$& 10, 22.5, 35\\
+%         \hline
+%         % $f_{\text{cl}}$ & 0.333\\
+%         % \hline
+%         % $s$ & 0.1\\ 
+%         % \hline
+%         % $N_{\text{cl}}$ & $10^5$\\ 
+%     \end{tabular}
+% \end{table}
+
+\begin{figure*}
+ \includegraphics[scale=0.25]{grid4}
+ \caption{Posteriors of the first set of models which vary both the torus and wind parameters independently. For this set, we choose to visualize both the 1d and 2d posteriors. 2d posteriors are able to show the relationships between parameters, as opposed to just their best fit. Down a column or across a row keeps one of the parameters constant while varying the other parameter. The 1d posteriors are the grid space where both of the parameters are the same. Contour lines for 0.5,1,1.5, and 2 sigma are shown.}
+ \label{fig:G4_corner_plot}
+\end{figure*}
+
+\par As can be seen in Figure~\ref{fig:G4_corner_plot}, this model set tends to favor a very compact, moderately centrally dense, highly inclined torus with a significantly extended wind. We are able to constrain some of the parameters such as \p, \ppol, \inc, \Ypol, while other parameters remain unconstrained (\Y, \sig,\sigpol, \vff,\vffpol, and open). Due to the interesting behavior (especially \inc versus open) at large opening angles and \textbf{sigma pol}, the favoring of small \vff values, and the large gaps between some of our parameters, we adjusted and re-modeled NGC3783 using altered parameter values, and adding additional "inbetween" models to better explore the parameter space around the peak of the posteriors. The parameter values for this new set are enumerated in Table~\ref{tab:pe2}, and this set now contains about a million modeled response functions.
+
+\begin{figure*}
+ \includegraphics[scale=0.25]{grid5}
+ \caption{Posteriors of the second set of models varying both the torus and wind independently. Note the change in ranges for some of the parameters.}
+ \label{fig:G5_corner_plot}
+\end{figure*}
+
+\par This expansion resulted in very few alterations to the best fit parameters, favoring very similar values to the previous set of models. 
+%[I'm going to stop here because this is really up to the point where I am right now, without going into analysis.]
+\begin{figure*}
+ \includegraphics[scale=0.25]{sp01clfrac0333.pdf}
+ \caption{\soft 0.1, \clfrac 0.333}
+ \label{fig:sp01clfrac0333_corner_plot}
+\end{figure*}
+\begin{figure*}
+ \includegraphics[scale=0.25]{sp10clfrac0333.pdf}
+ \caption{\soft 1.0, \clfrac 0.333}
+ \label{fig:sp10clfrac0333_corner_plot}
+\end{figure*}
+\begin{figure*}
+ \includegraphics[scale=0.25]{sp10clfrac0666.pdf}
+ \caption{\soft 1.0, \clfrac 0.667}
+ \label{fig:sp01clfrac0667_corner_plot}
+\end{figure*}
+\section{Discussion}
+\label{sec:discussion}
+\par In the previous section, we examined the posterior distributions for the structure and geometry of a two component (torus and polar bi-cone) dust distribution model. We found that by increasing the complexity of the model grids used to perform the MCMC search, we were able to better model the IR response of NGC 3783. 
+
+\subsection{Parameter Estimation of NGC 3783}
+\par We find that not all tested parameters have equal impact on the best fit IR response light curve, and are thus more difficult to constrain using this technique. Of the parameters that do most strongly impact the response light curve, we have yet to constrain only some. \zach{General statement not super useful here. This paragraph almost feels like it should be at the end of this subsection}
+\par We consistently find the strongest constraints for \p (\~0) and \ppol (\~0), the radial cloud distribution power law indices. Lower \p values tend to result in light curves that respond on too short a time delay resulting in a light curve that is too “sharp”. This is likely due to most of the responding clouds being very close to the dust sublimation radius. Conversely, higher \p values tend to overly smooth the resulting light curve, with the same justification as for low \p values.  
+\par The inclination (\inc) of the distribution is also generally well constrained to moderate inclinations ($30\degree$-$60\degree$), with the caveat that completely edge-on models (\inc $=90\degree$) were excluded as priors on the final set of models as they are generally unphysical to reverberation map. Performing reverberation mapping relies on the observer’s view of the central source being optically thin to the dust. In edge-on models, the central source would be completely obscured by the torus. These edge-on models, under certain conditions, resulted in degeneracies with models with other less extreme inclinations, motivating their exclusion. We find that inclination has more complex relationships with the other parameters, particularly the opening angle \open. This complexity can likely be attributed to discontinuities between optically thin and optically thick lines of sight to the inner regions of the dust, where the response is strongest.
+\par We find that model grids tend to favor smaller \Y values. Hot dust at approximately 1000-2000K responds most strongly in the near-IR H and K bands. Only dust close to the dust sublimation radius ($\lesssim2R_d$) can reach these temperatures on their illuminated side, suggesting that the best fit \Y and \Ypol values we find may be more closely related to controlling the overall volume of the dust distribution and thus the cloud sizes. This also suggests that it may be possible to use this technique to further constrain the dust distribution at larger radii using light curves at longer wavelengths. 
+We find that across model grids, \sig and \sigpol have a proportionally smaller impact on the response light curve and have not been constrained by our MCMC search. Comparing light curves where \sig and \sigpol are varied, the shorter timescale features tend to be muted as \sig and \sigpol increase. However, in further investigations, we would expect the angular width to also relate to the inclination in a similar way to \open. \zach{General ideas for this section: Could definitely figure out parameter importances!}
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{modelcomparison}
+ \caption{Full TORMAC simulated responses for the best fit torus only model, the best fit torus and bi-cone model (Torus + Wind 1) and the same parameters but with the p parameter modified from 0 to -2 (Torus + Wind 2). Observed 1.25µm data from Lira et al. (2011) is also shown.}
+ \label{fig:modelcomparison}
+\end{figure}
+
+\begin{itemize}
+    \item Previous works generally support the conclusions drawn from "Torus 1" of the variable wind model set.
+    \item It seems that grids must be relatively finely sampled for the influence from a non-delta transfer function to be determined.
+    \item The parameter space should only contain feasible models, as non-physical / generally unsupported models can cause degeneracy with feasible models. 
+    % Talk about previous methods used and how ours is unique
+    %This section is definitely missing a lot of stuff
+\end{itemize}
+\subsection{Comparison to Other Models of NGC 3783}
+\par Parameter estimates from this technique tend to correlate with predictions made by other methods. IR interferometric observations predict that the torus component of the dust has an inclination that is close to face-on to the observer (\inc $< 40\degree$) and a radial extent of \~0.07pc for the hot inner edge of the dust (GRAVITY Collaboration 2021).  Kinematic simulations of NGC 3783 find a best fit to a polar bi-cone roughly perpendicular to the torus ($i_{\text{pol}} \approx 60$-$75\degree$ with $i_{\text{tor}} \approx 35$-$40\degree$, an offset of \~65-$85\degree$) with \sigpol $\approx 7$-$10\degree$, and a half opening angle of \~30-$50\degree$ (Fischer et al. 2013; Müller-Sánchez et al. 2011). Our models tend to suggest that higher inclination solutions may be allowable, but otherwise our findings are consistent with their results. Dust continuum SED models presented in Hönig and Kishimoto (2017) favor moderate inclinations between $15\degree$ and $60\degree$, \p values between –1 and 1, and \ppol $> 1$.
+\subsection{Limitations \& Future Work}
+\label{sec:limitations}
+\subsubsection{Saturation Effects}
+\par We now discuss multiple effects which we classify as "saturation effects" as they all have similar effect on the resulting simulated response, namely, at high relative luminosities they each result in a stunting of the response (saturation) which results in significant deviation from the observed data. 
+\par One such effect which is well understood is when clouds become a sufficiently large such that only a small number of clouds ($\lesssim100$) are able to react directly. This is typically caused by large volume filling factors, large y values, and exacerbated by negative p values. These models are nonphysical due to the clouds' large size particularly at close to the inner edge, but the parameters used may not be nonphysical. This could be addressed by introducing a new parameter to describe the radial dependence of cloud volume, or by significantly increasing the number of clouds in the simulation.
+\par {\bf DESCRIBE THE DEVIATION IN FIGURE 5} It is hypothesized that this deviation is caused by the fact that TORMAC currently simulates dust sublimation as a function of temperature only, when in reality it is also a time dependent process. In reality, as clouds at the inner edge of the dust distribution are pushed inside of the expanding dust sublimation radius, the inner edge of the clouds (which receive the majority of the heating from the central source) begin to sublimate away, while the interior of the cloud raises in temperature. Instead, since TORMAC simply caps the front edge of the cloud at the dust sublimation temperature, the interior of the cloud is capped at a lower temperature than would be expected, resulting in a saturation of the clouds during periods of high emission from the disk. 
+%Mention J band problem?
+%discuss the sublimation saturation problem
+\begin{itemize}
+    \item Produce more models with similar parameters to those explored in the third set of models, and iteratively refining the results by adding more in-between models.
+    \item Model dust sublimation as a function of luminosity and time, may influence the response at high luminosities
+    \item Model the polar bi-cone as parabolic and or hyperbolic
+    \item Introduce variable cloud size as a function of radius
+\end{itemize}
+
+\section{Conclusion}
+\begin{itemize}
+    \item Torus and polar bi-cone models seem more strongly supported, agrees with observations.
+    \item These models tend to agree with and extend previous attempts to model NGC 3783.
+    \item IR response is very sensitive to some parameters (p, y, vff) but not to others (sig, i).
+    \item Because some parameters have opposite effects on the IR response, it can be difficult to tell some models apart.
+\end{itemize}
+\section*{Acknowledgements}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Data Availability}
+
+%The inclusion of a Data Availability Statement is a requirement for articles published in MNRAS. Data Availability Statements provide a standardized format for readers to understand the availability of data underlying the research results described in the article. The statement may refer to original data generated in the course of the study or to third-party data analyzed in the article. The statement should describe and provide means of access, where possible, by linking to the data or providing the required accession numbers for the relevant databases or DOIs.
+
+%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+
+% The best way to enter references is to use BibTeX:
+
+\bibliographystyle{mnras}
+\bibliography{citations} % if your bibtex file is called example.bib
+
+
+% Alternatively you could enter them by hand, like this:
+% This method is tedious and prone to error if you have lots of references
+%\begin{thebibliography}{99}
+%\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
+%Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
+%\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
+%Others S., 2012, Journal of Interesting Stuff, 17, 198
+%\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+\section{Some extra material}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Don't change these lines
+\bsp	% typesetting comment
+\label{lastpage}
+\end{document}
+
+% End of mnras_template.tex

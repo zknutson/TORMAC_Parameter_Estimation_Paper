@@ -1,0 +1,190 @@
+% mnras_template.tex 
+%
+% LaTeX template for creating an MNRAS paper
+%
+% v3.0 released 14 May 2015
+% (version numbers match those of mnras.cls)
+%
+% Copyright (C) Royal Astronomical Society 2015
+% Authors:
+% Keith T. Smith (Royal Astronomical Society)
+
+% Change log
+%
+% v3.2 July 2023
+%	Updated guidance on use of amssymb package
+% v3.0 May 2015
+%    Renamed to match the new package name
+%    Version number matches mnras.cls
+%    A few minor tweaks to wordinghttps://www.overleaf.com/project/6521d4070c4e7b9b11e3d2e7
+% v1.0 September 2013
+%    Beta testing only - never publicly released
+%    First version: a simple (ish) template for creating an MNRAS paper
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic setup. Most papers should leave these options alone.
+\documentclass[fleqn,usenatbib]{mnras}
+
+% MNRAS is set in Times font. If you don't have this installed (most LaTeX
+% installations will be fine) or prefer the old Computer Modern fonts, comment
+% out the following line
+\usepackage{newtxtext,newtxmath,gensymb}
+\usepackage{mathalpha}
+% Depending on your LaTeX fonts installation, you might get better results with one of these:
+%\usepackage{mathptmx}
+%\usepackage{txfonts}
+
+% Use vector fonts, so it zooms properly in on-screen viewing software
+% Don't change these lines unless you know what you are doing
+\usepackage[T1]{fontenc}
+% Allow "Thomas van Noord" and "Simon de Laguarde" and alike to be sorted by "N" and "L" etc. in the bibliography.
+% Write the name in the bibliography as "\VAN{Noord}{Van}{van} Noord, Thomas"
+
+%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
+
+% Only include extra packages if you really need them. Avoid using amssymb if newtxmath is enabled, as these packages can cause conflicts. newtxmatch covers the same math symbols while producing a consistent Times New Roman font. Common packages are:
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{booktabs} % For \toprule, \midrule, \bottomrule
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
+
+% Please keep new commands to a minimum, and use \newcommand not \def to avoid
+% overwriting existing commands. Example:
+%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
+\newcommand{\zach}[1]{\textcolor{red}{[Zach: {#1}]}}
+\newcommand{\Y}[0]{$Y$ }
+\newcommand{\sig}[0]{$\sigma$ }
+\newcommand{\p}[0]{$p$ }
+\newcommand{\vff}[0]{$\log{(\Phi)}$ }
+\newcommand{\inc}[0]{$i$ }
+\newcommand{\soft}[0]{$s$ }
+\newcommand{\Ypol}[0]{$Y_{\text{pol}}$ }
+\newcommand{\sigpol}[0]{$\sigma_{\text{pol}}$ }
+\newcommand{\ppol}[0]{$p_{\text{pol}}$ }
+\newcommand{\vffpol}[0]{$\log{(\Phi_{\text{pol}})}$ }
+\newcommand{\open}[0]{$\mathcal{O}_{\text{mid}}$ }
+\newcommand{\clfrac}[0]{$f_{\text{cl}}$ }
+\newcommand{\Nlos}[0]{$N_{\text{los}}$ }
+\newcommand{\Acl}[0]{$A_{\text{cl}}$ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%
+
+% Title of the paper, and the short title which is used in the headers.
+% Keep the title short and informative.
+\title[Parameter Estimation of the AGN NGC 3783 Using TORMAC]{Light Echo Modeling of the Active Galactic Nucleus NGC 3783 Using TORMAC - WORKING DRAFT}
+
+% The list of authors, and the short list which is used in the headers.
+% If you need two or more lines of authors, add an extra line using \newauthor
+\author[Z. Knutson et al.]{
+Zachary Knutson,$^{1}$\thanks{E-mail: \href{mailto:zach.knutson7431@gmail.com}{zach.knutson7431@gmail.com}}
+Triana Almeyda,$^{1}$
+Andrew Robinson$^{2}$
+Sebastian Hönig$^{3}$
+and Jack Gallimore$^{4}$
+\\
+% List of institutions
+$^{1}$Department of Astronomy, University of Florida, 211 Bryant Space Science Center, Gainesville, FL, 32611, USA\\
+$^{2}$School of Physics and Astronomy, Rochester Institute of Technology, 1 Lomb Memorial Drive, Rochester, NY 14623, USA\\
+$^{3}$Department of Physics \& Astronomy, University of Southampton, Southampton, SO17 1BJ, UK\\
+$^{4}$Department of Physics, Bucknell University, Lewisburg, PA 17837, USA
+}
+
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2026}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+% Abstract of the paper
+\begin{abstract}
+%This is a simple template for authors to write new MNRAS papers.
+%The abstract should briefly describe the aims, methods, and main results of the paper.
+%It should be a single paragraph not more than 250 words (200 words for Letters).
+%No references should appear in the abstract.
+When supermassive black holes, found in the center of most galaxies, rapidly consume material, they are known as active galactic nuclei (AGN). This study employs computational modeling to explore the dust structure commonly found around AGN, focusing on one such AGN, NGC 3783. Utilizing the TORMAC code developed by Dr. Triana Almeyda, we generate simulated infrared (IR) light curves based on a 3D ensemble of clouds within a simulated dust structure, using observed optical light curves of NGC 3783 as the input continuum source. We use a Markov Chain Monte Carlo (MCMC) code, written by collaborator Dr. Jack Gallimore, to determine the best-fit parameters of the dust distribution by comparing the simulated IR light curves to the observed IR light curves for NGC 3783. Here we present preliminary results from these simulations and demonstrate their application towards constraining the structure and geometry of NGC 3783. [instead of what was here, add some discussion / key findings] 
+\end{abstract}
+
+% Select between one and six entries from the list of approved keywords.
+% Don't make up new ones.
+\begin{keywords}
+radiative transfer -- galaxies: active
+\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+
+\input{sections/intro}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusions}
+
+
+
+\section*{Acknowledgements}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Data Availability}
+
+%The inclusion of a Data Availability Statement is a requirement for articles published in MNRAS. Data Availability Statements provide a standardized format for readers to understand the availability of data underlying the research results described in the article. The statement may refer to original data generated in the course of the study or to third-party data analyzed in the article. The statement should describe and provide means of access, where possible, by linking to the data or providing the required accession numbers for the relevant databases or DOIs.
+
+%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+
+% The best way to enter references is to use BibTeX:
+
+\bibliographystyle{mnras}
+\bibliography{TORMAC} % if your bibtex file is called example.bib
+
+
+% Alternatively you could enter them by hand, like this:
+% This method is tedious and prone to error if you have lots of references
+%\begin{thebibliography}{99}
+%\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
+%Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
+%\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
+%Others S., 2012, Journal of Interesting Stuff, 17, 198
+%\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+\section{Some extra material}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Don't change these lines
+\bsp	% typesetting comment
+\label{lastpage}
+\end{document}
+
+% End of mnras_template.tex
+
+
+%Today I am finishing my new results
+%Tomorrow make the posterior for the 
+%
+
+
+%include in "future plans" stuff that we will do like over the summer but what do I see for the general future of tormac too.
+
+
+% need a best fit light curve plot, for the poster and the paper.
+
+% When at RIT reach out to Rachel Mechum, she was at UF and knows a lot of things about how the two departments work. She works with Richard O'shaunessey.
+
+New SOPA professor, does ML on stars. 

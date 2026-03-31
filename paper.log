@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.27)  28 MAR 2026 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.27)  31 MAR 2026 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -452,54 +452,56 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count321
 \@lastruleclass=\count322
 \@thisrulewidth=\dimen198
+) (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 107.
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 109.
  (/usr/share/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 107.
+(Font)              scaled to size 9.0pt on input line 109.
  (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 107.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 107.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 109.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 109.
  (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 107.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 107.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 109.
  (/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 107.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 107.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 109.
  (/usr/share/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 107.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 107.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 109.
  (/usr/share/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    ... okay on input line 109.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -535,7 +537,7 @@ LaTeX Font Info:    ... okay on input line 107.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 107.
+Package hyperref Info: Link coloring ON on input line 109.
 (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
@@ -561,167 +563,167 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@mv@tabular=\count329
 \c@mv@boldtabular=\count330
-LaTeX Info: Command `\dddot' is already robust on input line 107.
-LaTeX Info: Command `\ddddot' is already robust on input line 107.
+LaTeX Info: Command `\dddot' is already robust on input line 109.
+LaTeX Info: Command `\ddddot' is already robust on input line 109.
 \symgns@font=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ntxtlf/m/n --> TS1/ntxtlf/b/n on input line 107.
-Package gensymb Info: Math companion symbols declared on input line 107.
-LaTeX Info: Redefining \degree on input line 107.
-LaTeX Info: Redefining \celsius on input line 107.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 107.
-LaTeX Info: Redefining \ohm on input line 107.
-Package gensymb Info: Using \textohm for \ohm on input line 107.
-Package gensymb Info: Using \textmu for \micro on input line 107.
+(Font)                  TS1/ntxtlf/m/n --> TS1/ntxtlf/b/n on input line 109.
+Package gensymb Info: Math companion symbols declared on input line 109.
+LaTeX Info: Redefining \degree on input line 109.
+LaTeX Info: Redefining \celsius on input line 109.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 109.
+LaTeX Info: Redefining \ohm on input line 109.
+Package gensymb Info: Using \textohm for \ohm on input line 109.
+Package gensymb Info: Using \textmu for \micro on input line 109.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.0pt on input line 110.
+(Font)              scaled to size 16.0pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.0pt on input line 110.
+(Font)              scaled to size 16.0pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 112.
  (/usr/share/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.6pt on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 112.
  (/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.6pt on input line 110.
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 112.
  (/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 112.
  (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 112.
  (/usr/share/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 110.
+(Font)              scaled to size 12.0pt on input line 112.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 110.
+(Font)              scaled to size 8.8pt on input line 112.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 110.
+(Font)              scaled to size 6.6pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 110.
+(Font)              size <5> substituted on input line 112.
 
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 110.
+(Font)              scaled to size 8.0pt on input line 112.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 110.
+(Font)              scaled to size 6.0pt on input line 112.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 110.
+(Font)              scaled to size 5.5pt on input line 112.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 113.
+(Font)              scaled to size 9.0pt on input line 115.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 113.
+(Font)              scaled to size 10.0pt on input line 115.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 123.
+(Font)              scaled to size 10.0pt on input line 125.
 (./sections/intro.tex
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
 (Font)              scaled to size 9.0pt on input line 3.
@@ -827,8 +829,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.115 
        <./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 <figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf, id=166, 1611.62097pt x 1611.62097pt>
 File: figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf Graphic file (type pdf)
 <use figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>
@@ -839,7 +839,10 @@ Overfull \hbox (7.72925pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
-<figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf, id=167, 1004.553pt x 1004.553pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf, id=169, 1004.553pt x 1004.553pt>
 File: figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf Graphic file (type pdf)
 <use figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf>
 Package pdftex.def Info: figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf  used on input line 126.
@@ -849,50 +852,30 @@ Overfull \hbox (7.13763pt too wide) in paragraph at lines 126--127
 [][]
  []
 
-) (./sections/discussion.tex [6
+) (./sections/discussion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.2 \section
-            {Discussion} <./figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf>]
-<figures/discussion/modelcomparison.png, id=398, 462.528pt x 346.896pt>
-File: figures/discussion/modelcomparison.png Graphic file (type png)
-<use figures/discussion/modelcomparison.png>
-Package pdftex.def Info: figures/discussion/modelcomparison.png  used on input line 27.
-(pdftex.def)             Requested size: 244.0pt x 183.00179pt.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 28.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 28.
- [7
+            {Discussion} <./figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf>] [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.46 \par
-          {\bf DESCRIBE THE DEVIATION IN FIGURE 5} It is hypothesized that t... <./figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8
+l.25 
+      <./figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf>] [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.50     \item P
-                roduce more models with similar parameters to those explored... <./figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>]) (./sections/conclusions.tex) (./paper.bbl) [9
+l.41 \subsection
+                {Limitations \& Future Work} <./figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>]) (./sections/conclusions.tex) (./paper.bbl) [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.174 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.174 \end{document}
-                    {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf> <./figures/discussion/modelcomparison.png>] (./paper.aux)
+l.176 \end{document}
+                     <./figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf>] (./paper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -909,21 +892,21 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: E342F5D60D5950011D1D28F2E469777E;2178.
  ) 
 Here is how much of TeX's memory you used:
- 15322 strings out of 469515
- 226316 string characters out of 5470807
- 642888 words of memory out of 5000000
- 43664 multiletter control sequences out of 15000+600000
- 716901 words of font info for 157 fonts, out of 8000000 for 9000
+ 15341 strings out of 469515
+ 226683 string characters out of 5470807
+ 643474 words of memory out of 5000000
+ 43684 multiletter control sequences out of 15000+600000
+ 715800 words of font info for 155 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,15n,93p,2771b,435s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,93p,3652b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on paper.pdf (9 pages, 6750236 bytes).
+</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on paper.pdf (9 pages, 6516163 bytes).
 PDF statistics:
- 912 PDF objects out of 1000 (max. 8388607)
+ 910 PDF objects out of 1000 (max. 8388607)
  503 compressed objects within 6 object streams
- 42 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

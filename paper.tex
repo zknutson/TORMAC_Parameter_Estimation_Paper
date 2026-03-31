@@ -46,6 +46,7 @@
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{booktabs} % For \toprule, \midrule, \bottomrule
+\usepackage{xspace} % Smart spacing after commands in text mode
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -54,25 +55,26 @@
 % Please keep new commands to a minimum, and use \newcommand not \def to avoid
 % overwriting existing commands. Example:
 %\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
-\newcommand{\zach}[1]{\textcolor{red}{[Zach: {#1}]}}
-\newcommand{\Y}[0]{$Y$ }
-\newcommand{\sig}[0]{$\sigma$ }
-\newcommand{\p}[0]{$p$ }
-\newcommand{\vff}[0]{$\log{(\Phi)}$ }
-\newcommand{\inc}[0]{$i$ }
-\newcommand{\soft}[0]{$s$ }
-\newcommand{\Ypol}[0]{$Y_{\text{pol}}$ }
-\newcommand{\sigpol}[0]{$\sigma_{\text{pol}}$ }
-\newcommand{\ppol}[0]{$p_{\text{pol}}$ }
-\newcommand{\vffpol}[0]{$\log{(\Phi_{\text{pol}})}$ }
-\newcommand{\open}[0]{$\mathcal{O}_{\text{mid}}$ }
-\newcommand{\clfrac}[0]{$f_{\text{cl}}$ }
-\newcommand{\Nlos}[0]{$N_{\text{los}}$ }
-\newcommand{\Acl}[0]{$A_{\text{cl}}$ }
-\newcommand{\Nlospol}[0]{$N_{\text{los,pol}}$ }
-\newcommand{\Aclpol}[0]{$A_{\text{cl,pol}}$ }
-\newcommand{\intersection}[0]{$\theta_{\text{int}}$ }
-\newcommand{\clarearatio}[0]{$R_{\text{c,pol}} / R_{\text{c}}$ }
+\newcommand{\zach}[1]{\textcolor{red}{[Zach: {#1}]}}        
+% Use \ensuremath so these commands work in both text and math mode.
+\newcommand{\Y}{\ensuremath{Y}\xspace}
+\newcommand{\sig}{\ensuremath{\sigma}\xspace}
+\newcommand{\p}{\ensuremath{p}\xspace}
+\newcommand{\vff}{\ensuremath{\log(\Phi)}\xspace}
+\newcommand{\inc}{\ensuremath{i}\xspace}
+\newcommand{\soft}{\ensuremath{s}\xspace}
+\newcommand{\Ypol}{\ensuremath{Y_{\text{pol}}}\xspace}
+\newcommand{\sigpol}{\ensuremath{\sigma_{\text{pol}}}\xspace}
+\newcommand{\ppol}{\ensuremath{p_{\text{pol}}}\xspace}
+\newcommand{\vffpol}{\ensuremath{\log(\Phi_{\text{pol}})}\xspace}
+\newcommand{\open}{\ensuremath{\mathcal{O}_{\text{mid}}}\xspace}
+\newcommand{\clfrac}{\ensuremath{f_{\text{cl}}}\xspace}
+\newcommand{\Nlos}{\ensuremath{N_{\text{los}}}\xspace}
+\newcommand{\Acl}{\ensuremath{A_{\text{cl}}}\xspace}
+\newcommand{\Nlospol}{\ensuremath{N_{\text{los,pol}}}\xspace}
+\newcommand{\Aclpol}{\ensuremath{A_{\text{cl,pol}}}\xspace}
+\newcommand{\intersection}{\ensuremath{\theta_{\text{int}}}\xspace}
+\newcommand{\clarearatio}{\ensuremath{R_{\text{c,pol}} / R_{\text{c}}}\xspace}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%

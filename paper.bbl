@@ -1,0 +1,25 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@} {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml} {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{Almeyda, Robinson, Richmond, Vazquez  \& Nikutta}{Almeyda et~al.}{2017}]{almeyda_modeling_2017}
+Almeyda T.,  Robinson A.,  Richmond M.,  Vazquez B.,   Nikutta R.,  2017, \mn@doi [ApJ] {10.3847/1538-4357/aa7687}, 843, 3
+
+\bibitem[\protect\citeauthoryear{Almeyda, Robinson, Richmond, Nikutta  \& McDonough}{Almeyda et~al.}{2020}]{almeyda_modeling_2020}
+Almeyda T.,  Robinson A.,  Richmond M.,  Nikutta R.,   McDonough B.,  2020, \mn@doi [ApJ] {10.3847/1538-4357/ab6aa1}, 891, 26
+
+\bibitem[\protect\citeauthoryear{Lira, Arévalo, Uttley, McHardy  \& Breedt}{Lira et~al.}{2011}]{lira_optical_2011}
+Lira P.,  Arévalo P.,  Uttley P.,  McHardy I.,   Breedt E.,  2011, \mn@doi [MNRAS] {10.1111/j.1365-2966.2011.18774.x}, 415, 1290
+
+\bibitem[\protect\citeauthoryear{Sales et~al.,}{Sales et~al.}{2015}]{sales_embedded_2015}
+Sales D.~A.,  et~al., 2015, \mn@doi [ApJ] {10.1088/0004-637X/799/1/25}, 799, 25
+
+\makeatother
+\end{thebibliography}

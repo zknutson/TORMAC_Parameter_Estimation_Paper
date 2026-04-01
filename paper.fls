@@ -150,6 +150,10 @@ INPUT /usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/xspace.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/share/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 INPUT /usr/share/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 INPUT /usr/share/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
@@ -343,6 +347,10 @@ INPUT ./figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png
 INPUT ./figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png
 INPUT ./figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png
 INPUT ./figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png
+INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
+INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
+INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
+INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
 INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxmi7.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
@@ -354,10 +362,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
-INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
-INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
-INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
-INPUT ./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png
 INPUT ./figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf
 INPUT ./figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf
 INPUT ./figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf

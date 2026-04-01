@@ -14,6 +14,43 @@
 % maybe make a table of "this study found this, then this study found this, and our study found this" in terms of parameters.
 
 \label{sec:discussion}
+
+\subsection{Comparison to Other Models of NGC 3783}
+
+\begin{table*}
+    \caption{Comparison of parameter estimates from different studies of NGC 3783. The first five columns show estimates from previous studies using different methods, while the last two columns show the estimates from this work using TORMAC with a torus only model and a torus plus polar bi-cone model.}
+    \label{tab:params}
+    \centering
+    \begin{tabularx}{\textwidth}{l{c}*{6}{>{\centering\arraybackslash}X}}
+    \hline
+    & \cite{honig_dusty_2017} & \cite{gravity_collaboration_central_2021} & \cite{lyu_polar_2018} & \cite{bentz_detailed_2021} & \cite{fischer_determining_2013} & This Work (Torus Only) & This Work (Torus + Polar)\\
+    \hline
+    \Y & N/A & & 500 & & & \\
+    \hline
+    \sig & <17\degree & 50-13 & & 40-15 & & \\
+    \hline
+    \p & -1-1 & & 0-1 & & & \\
+    \hline
+    \vff & & & & & & \\
+    \hline
+    \inc & & 39-13\degree & 30-12\degree & & 35\degree & \\
+    \hline
+    \Ypol & & & & & & \\
+    \hline
+    \sigpol & & & & 10\degree & & \\
+    \hline
+    \ppol & >1 & & & & & \\
+    \hline
+    \vffpol & & & & & & \\
+    \hline
+    \open & Inconclusive & & & 50 & & \\
+    \hline
+    \end{tabularx}
+\end{table*}
+
+\par Parameter estimates from this technique tend to correlate with predictions made by other methods. IR interferometric observations predict that the torus component of the dust has an inclination that is close to face-on to the observer (\inc $< 40\degree$) and a radial extent of \~0.07pc for the hot inner edge of the dust \citep{gravity_collaboration_central_2021}.  Kinematic simulations of NGC 3783 find a best fit to a polar bi-cone roughly perpendicular to the torus ($i_{\text{pol}} \approx 60$-$75\degree$ with $i_{\text{tor}} \approx 35$-$40\degree$, an offset of \~65-$85\degree$) with \sigpol $\approx 7$-$10\degree$, and a half opening angle of \~30-$50\degree$ \citep{fischer_determining_2013}\zach{; Müller-Sánchez et al. 2011}. Our models tend to suggest that higher inclination solutions may be allowable, but otherwise our findings are consistent with their results. Dust continuum SED models presented in Hönig and Kishimoto (2017) favor moderate inclinations between $15\degree$ and $60\degree$, \p values between –1 and 1, and \ppol $> 1$.
+
+
 \par In the previous section, we examined the posterior distributions for the structure and geometry of a two component (torus and polar bi-cone) dust distribution model. We found that by increasing the complexity of the model grids used to perform the MCMC search, we were able to better model the IR response of NGC 3783. 
 
 \subsection{Parameter Estimation of NGC 3783}
@@ -36,8 +73,7 @@ We find that across model grids, \sig and \sigpol have a proportionally smaller 
     % Talk about previous methods used and how ours is unique
     %This section is definitely missing a lot of stuff
 \end{itemize}
-\subsection{Comparison to Other Models of NGC 3783}
-\par Parameter estimates from this technique tend to correlate with predictions made by other methods. IR interferometric observations predict that the torus component of the dust has an inclination that is close to face-on to the observer (\inc $< 40\degree$) and a radial extent of \~0.07pc for the hot inner edge of the dust (GRAVITY Collaboration 2021).  Kinematic simulations of NGC 3783 find a best fit to a polar bi-cone roughly perpendicular to the torus ($i_{\text{pol}} \approx 60$-$75\degree$ with $i_{\text{tor}} \approx 35$-$40\degree$, an offset of \~65-$85\degree$) with \sigpol $\approx 7$-$10\degree$, and a half opening angle of \~30-$50\degree$ (Fischer et al. 2013; Müller-Sánchez et al. 2011). Our models tend to suggest that higher inclination solutions may be allowable, but otherwise our findings are consistent with their results. Dust continuum SED models presented in Hönig and Kishimoto (2017) favor moderate inclinations between $15\degree$ and $60\degree$, \p values between –1 and 1, and \ppol $> 1$.
+
 \subsection{Limitations \& Future Work}
 \label{sec:limitations}
 \subsubsection{Saturation Effects}

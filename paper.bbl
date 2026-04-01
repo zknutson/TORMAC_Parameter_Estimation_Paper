@@ -15,8 +15,23 @@ Almeyda T.,  Robinson A.,  Richmond M.,  Vazquez B.,   Nikutta R.,  2017, \mn@do
 \bibitem[\protect\citeauthoryear{Almeyda, Robinson, Richmond, Nikutta  \& McDonough}{Almeyda et~al.}{2020}]{almeyda_modeling_2020}
 Almeyda T.,  Robinson A.,  Richmond M.,  Nikutta R.,   McDonough B.,  2020, \mn@doi [ApJ] {10.3847/1538-4357/ab6aa1}, 891, 26
 
+\bibitem[\protect\citeauthoryear{Bentz, Williams, Street, Onken, Valluri  \& Treu}{Bentz et~al.}{2021}]{bentz_detailed_2021}
+Bentz M.~C.,  Williams P.~R.,  Street R.,  Onken C.~A.,  Valluri M.,   Treu T.,  2021, \mn@doi [The Astrophysical Journal] {10.3847/1538-4357/ac19af}, 920, 112
+
+\bibitem[\protect\citeauthoryear{Fischer, Crenshaw, Kraemer  \& Schmitt}{Fischer et~al.}{2013}]{fischer_determining_2013}
+Fischer T.~C.,  Crenshaw D.~M.,  Kraemer S.~B.,   Schmitt H.~R.,  2013, \mn@doi [ApJS] {10.1088/0067-0049/209/1/1}, 209, 1
+
+\bibitem[\protect\citeauthoryear{{GRAVITY Collaboration}}{{GRAVITY Collaboration}}{2021}]{gravity_collaboration_central_2021}
+{GRAVITY Collaboration} 2021, \mn@doi [A\&A] {10.1051/0004-6361/202040061}, 648, A117
+
+\bibitem[\protect\citeauthoryear{Hönig \& Kishimoto}{Hönig \& Kishimoto}{2017}]{honig_dusty_2017}
+Hönig S.~F.,  Kishimoto M.,  2017, \mn@doi [ApJ] {10.3847/2041-8213/aa6838}, 838, L20
+
 \bibitem[\protect\citeauthoryear{Lira, Arévalo, Uttley, McHardy  \& Breedt}{Lira et~al.}{2011}]{lira_optical_2011}
 Lira P.,  Arévalo P.,  Uttley P.,  McHardy I.,   Breedt E.,  2011, \mn@doi [MNRAS] {10.1111/j.1365-2966.2011.18774.x}, 415, 1290
+
+\bibitem[\protect\citeauthoryear{Lyu \& Rieke}{Lyu \& Rieke}{2018}]{lyu_polar_2018}
+Lyu J.,  Rieke G.~H.,  2018, \mn@doi [ApJ] {10.3847/1538-4357/aae075}, 866, 92
 
 \bibitem[\protect\citeauthoryear{Sales et~al.,}{Sales et~al.}{2015}]{sales_embedded_2015}
 Sales D.~A.,  et~al., 2015, \mn@doi [ApJ] {10.1088/0004-637X/799/1/25}, 799, 25

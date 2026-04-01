@@ -6,45 +6,45 @@ Database file #1: TORMAC.bib
 Warning--I didn't find a database entry for ""
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 4 entries,
+You've used 9 entries,
             2881 wiz_defined-function locations,
-            751 strings with 7360 characters,
-and the built_in function-call counts, 1961 in all, are:
-= -- 140
-> -- 167
-< -- 6
-+ -- 69
-- -- 30
-* -- 245
-:= -- 326
+            793 strings with 8809 characters,
+and the built_in function-call counts, 4338 in all, are:
+= -- 324
+> -- 353
+< -- 22
++ -- 149
+- -- 60
+* -- 530
+:= -- 715
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 8
-chr.to.int$ -- 4
-cite$ -- 4
-duplicate$ -- 90
-empty$ -- 89
-format.name$ -- 40
-if$ -- 325
+call.type$ -- 9
+change.case$ -- 18
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 203
+empty$ -- 199
+format.name$ -- 88
+if$ -- 731
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 25
-num.names$ -- 28
-pop$ -- 16
+missing$ -- 9
+newline$ -- 40
+num.names$ -- 66
+pop$ -- 33
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 36
 quote$ -- 0
-skip$ -- 55
+skip$ -- 128
 stack$ -- 0
-substring$ -- 88
-swap$ -- 46
-text.length$ -- 16
+substring$ -- 208
+swap$ -- 108
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 81
 warning$ -- 0
-while$ -- 30
+while$ -- 70
 width$ -- 0
-write$ -- 52
+write$ -- 102
 (There was 1 warning)

@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1774993423.07335 "paper.aux" "paper.bbl" "paper" 1774993426.33558 0
+["bibtex paper"] 1775062560.98703 "paper.aux" "paper.bbl" "paper" 1775070219.05014 0
   "./TORMAC.bib" 1774665137.25722 58078 173e3e15f567c0368cf9f077babd6903 ""
   "./mnras.bst" 1774665141.25416 43376 8463aa2cc1948e346d5641ca59bb4619 ""
-  "paper.aux" 1774993426.04954 11497 09e38c3274637a7d33652a7692e58755 "pdflatex"
+  "paper.aux" 1775070218.75359 12955 674429b14b82db4e09a143d86e710ede "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1774993423.17577 "/home/zknutson/TORMAC_Parameter_Estimation_Paper/paper.tex" "paper.pdf" "paper" 1774993426.33587 0
-  "/home/zknutson/TORMAC_Parameter_Estimation_Paper/paper.tex" 1774993416.54442 8791 d27e32bfc0605ee3b28434207fb36467 ""
+["pdflatex"] 1775070216.03114 "/home/zknutson/TORMAC_Parameter_Estimation_Paper/paper.tex" "paper.pdf" "paper" 1775070219.05041 0
+  "/home/zknutson/TORMAC_Parameter_Estimation_Paper/paper.tex" 1775056664.95298 8855 9d278d0965749a41ecba383b4c06ffe2 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1772820570 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1772820570 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1772820570 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -139,6 +139,8 @@
   "/usr/share/texmf-dist/tex/latex/oberdiek/centernot.sty" 1772820570 1640 c9cca60f81c5839b9a3e794d72c0b0a7 ""
   "/usr/share/texmf-dist/tex/latex/refcount/refcount.sty" 1772820570 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1772820570 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
+  "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1772820570 15651 9d7c62df82cb29a555c00550babfe364 ""
+  "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1772820570 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "/usr/share/texmf-dist/tex/latex/tools/xspace.sty" 1772820570 4545 d7bb86d489a8ad5263e4c34304c03aee ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1772820570 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1772820570 55384 b454dec21c2d9f45ec0b793f0995b992 ""
@@ -155,15 +157,15 @@
   "figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png" 1774665141.20916 1154131 a3e524e79237e4a8ea68687542fbe989 ""
   "figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png" 1774665141.24816 130114 ff8cb57a4f1a386053a79e8f0e923020 ""
   "mnras.cls" 1774665141.25416 62657 f252e2c707372bfc3609684578d8db01 ""
-  "paper.aux" 1774993426.04954 11497 09e38c3274637a7d33652a7692e58755 "pdflatex"
-  "paper.bbl" 1774993423.16958 1844 6f1be9a9ae87488f959407a70357190d "bibtex paper"
-  "paper.out" 1774993426.05354 2178 e342f5d60d5950011d1d28f2e469777e "pdflatex"
-  "paper.tex" 1774993416.54442 8791 d27e32bfc0605ee3b28434207fb36467 ""
+  "paper.aux" 1775070218.75359 12955 674429b14b82db4e09a143d86e710ede "pdflatex"
+  "paper.bbl" 1775062561.07944 2941 aca9dd2a36bdbffc975fe31a6b12502b "bibtex paper"
+  "paper.out" 1775070218.75459 2178 78772c9bd7ce2c210c1c38d7311ca6f0 "pdflatex"
+  "paper.tex" 1775056664.95298 8855 9d278d0965749a41ecba383b4c06ffe2 ""
   "sections/conclusions.tex" 1774665141.25502 459 c59d4a2531eb8ddd27967c17d49d1002 ""
-  "sections/discussion.tex" 1774993246.52653 8350 c199bf45332af48e6dcc1d664144dbf8 ""
+  "sections/discussion.tex" 1775062523.31544 9550 1096fb446b8cf7914aee1f29eefcb4a6 ""
   "sections/intro.tex" 1774665141.25512 8885 30d7f7bd610136accbd927a587ec6bf2 ""
   "sections/methods.tex" 1774665141.25517 14816 44257edd645822bdaa0012691bedc6de ""
-  "sections/results.tex" 1774993409.62531 23911 1bae3e81934bba2f578e26261c471777 ""
+  "sections/results.tex" 1775070215.78464 23957 555d8d53dd776962c51b87585024d6c7 ""
   (generated)
   "paper.aux"
   "paper.log"

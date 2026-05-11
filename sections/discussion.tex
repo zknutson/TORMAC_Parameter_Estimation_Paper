@@ -19,40 +19,45 @@
 
 \begin{table*}
     \caption{Comparison of parameter estimates from different studies of NGC 3783. The first five columns show estimates from previous studies using different methods, while the last two columns show the estimates from this work using TORMAC with a torus only model and a torus plus polar bi-cone model.}
-    \label{tab:params}
+    \label{tab:param_comparison}
     \centering
     \begin{tabularx}{\textwidth}{l{c}*{6}{>{\centering\arraybackslash}X}}
     \hline
     & \cite{honig_dusty_2017} & \cite{gravity_collaboration_central_2021} & \cite{lyu_polar_2018} & \cite{bentz_detailed_2021} & \cite{fischer_determining_2013} & This Work (Torus Only) & This Work (Torus + Polar)\\
     \hline
-    \Y & N/A & & 500 & & & \\
+    \Y & N/A & N/A & 500 & N/A& N/A & \\
     \hline
-    \sig & <17\degree & 50-13 & & 40-15 & & \\
+    \sig & <24\degree & 50-13 & N/A & 41-25 & N/A & \\
     \hline
-    \p & -1-1 & & 0-1 & & & \\
+    \p & -1 - 0 & incomparable & 0-1 & incomparable& N/A & \\
     \hline
-    \vff & & & & & & \\
+    \vff & N/A & N/A & N/A & N/A & N/A & \\
     \hline
-    \inc & & 39-13\degree & 30-12\degree & & 35\degree & \\
+    \inc & 15-60\degree & 39-13\degree & 30-12\degree & 22-11\degree & 15\degree & \\
     \hline
-    \Ypol & & & & & & \\
+    \Ypol & N/A & N/A & N/A & N/A & $\approx 2000$ & \\
     \hline
-    \sigpol & & & & 10\degree & & \\
+    \sigpol & N/A & N/A & N/A & N/A & 5\degree & \\
     \hline
-    \ppol & >1 & & & & & \\
+    \ppol & >1 & N/A & N/A & N/A & N/A & \\
     \hline
-    \vffpol & & & & & & \\
+    \vffpol & N/A & N/A & N/A & N/A & N/A & \\
     \hline
-    \open & Inconclusive & & & 50 & & \\
+    \open & N/A & N/A & N/A & N/A & 50\degree & \\
     \hline
     \end{tabularx}
 \end{table*}
+% 
+\par Our dust sublimation radius is 0.028pc \zach{also will need to explain why this is so small} which is based on a bolometric luminosity of $9.38\times10^{43}$ erg/s \zach{Need a citation for this!} and a dust sublimation temperature of 1500K.
+
+\par \cite{hoenig_dust_2013} found that the mid-IR size of the wind is about 4.23 by 1.42 pc. This corresponds to a Y of .
+\par \cite{gravity_collaboration_central_2021} found that the near-IR emission extends to a radius of \~0.07pc, and we compare this value with the RWD of our results.
 
 \par Parameter estimates from this technique tend to correlate with predictions made by other methods. IR interferometric observations predict that the torus component of the dust has an inclination that is close to face-on to the observer (\inc $< 40\degree$) and a radial extent of \~0.07pc for the hot inner edge of the dust \citep{gravity_collaboration_central_2021}.  Kinematic simulations of NGC 3783 find a best fit to a polar bi-cone roughly perpendicular to the torus ($i_{\text{pol}} \approx 60$-$75\degree$ with $i_{\text{tor}} \approx 35$-$40\degree$, an offset of \~65-$85\degree$) with \sigpol $\approx 7$-$10\degree$, and a half opening angle of \~30-$50\degree$ \citep{fischer_determining_2013}\zach{; Müller-Sánchez et al. 2011}. Our models tend to suggest that higher inclination solutions may be allowable, but otherwise our findings are consistent with their results. Dust continuum SED models presented in Hönig and Kishimoto (2017) favor moderate inclinations between $15\degree$ and $60\degree$, \p values between –1 and 1, and \ppol $> 1$.
 
 
 \par In the previous section, we examined the posterior distributions for the structure and geometry of a two component (torus and polar bi-cone) dust distribution model. We found that by increasing the complexity of the model grids used to perform the MCMC search, we were able to better model the IR response of NGC 3783. 
-
+\par \cite{hoenig_dust_2013} found that the mid-IR size of the wind is about 4.23 by 1.42 pc.
 \subsection{Parameter Estimation of NGC 3783}
 \par We find that not all tested parameters have equal impact on the best fit IR response light curve, and are thus more difficult to constrain using this technique. Of the parameters that do most strongly impact the response light curve, we have yet to constrain only some. \zach{General statement not super useful here. This paragraph almost feels like it should be at the end of this subsection}
 \par We consistently find the strongest constraints for \p (\~0) and \ppol (\~0), the radial cloud distribution power law indices. Lower \p values tend to result in light curves that respond on too short a time delay resulting in a light curve that is too “sharp”. This is likely due to most of the responding clouds being very close to the dust sublimation radius. Conversely, higher \p values tend to overly smooth the resulting light curve, with the same justification as for low \p values.  

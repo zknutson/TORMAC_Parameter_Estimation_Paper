@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.27)  1 APR 2026 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.17)  11 MAY 2026 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -480,11 +480,7 @@ File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 109.
- (./paper.aux
-
-LaTeX Warning: Label `tab:params' multiply defined.
-
-)
+ (./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 109.
@@ -770,9 +766,9 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 21.
+(Font)              scaled to size 6.0pt on input line 23.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}
 
 
@@ -786,7 +782,7 @@ Overfull \hbox (6.55891pt too wide) detected at line 19
 \OML/ntxmi/m/it/9 N[]\LMS/ntxsy/m/n/9 น\OML/ntxmi/m/it/9 ^^R\LMS/ntxsy/m/n/9 บ / []ป^^@น\OML/ntxmi/m/it/9 ^^R \LMS/ntxsy/m/n/9 ^^@ O[]บ[]\OT1/minntx/m/n/9 2\OML/ntxmi/m/it/9 ^^[[]\LMS/ntxsy/m/n/9 ผ ฯ []ป^^@น\OML/ntxmi/m/it/9 ^^R \LMS/ntxsy/m/n/9 ^^@ น\OT1/minntx/m/n/9 180\TS1/ntxtlf/m/n/9 ฐ \LMS/ntxsy/m/n/9 ^^@ O[]บบ[]\OT1/minntx/m/n/9 2\OML/ntxmi/m/it/9 ^^[[]\LMS/ntxsy/m/n/9 ผ
  []
 
-<figures/methods/parameter_summary.png, id=82, 140.54555pt x 105.88997pt>
+<figures/methods/parameter_summary.png, id=89, 140.54555pt x 105.88997pt>
 File: figures/methods/parameter_summary.png Graphic file (type png)
 <use figures/methods/parameter_summary.png>
 Package pdftex.def Info: figures/methods/parameter_summary.png  used on input line 24.
@@ -802,12 +798,12 @@ l.33
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 40.
 ) (./sections/results.tex [3]
-<figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png, id=125, 852.786pt x 852.786pt>
+<figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png, id=131, 852.786pt x 852.786pt>
 File: figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png Graphic file (type png)
 <use figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png>
 Package pdftex.def Info: figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png  used on input line 67.
 (pdftex.def)             Requested size: 238.77844pt x 238.77844pt.
-<figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png, id=128, 397.485pt x 397.485pt>
+<figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png, id=134, 397.485pt x 397.485pt>
 File: figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png Graphic file (type png)
 <use figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png>
 Package pdftex.def Info: figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png  used on input line 79.
@@ -823,7 +819,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.85 
       <./figures/results/torus_only_corner_plots/dynesty_0.1_1.0__corner.png>]
-<figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf, id=144, 1611.62097pt x 1611.62097pt>
+<figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf, id=149, 1611.62097pt x 1611.62097pt>
 File: figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf Graphic file (type pdf)
 <use figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf>
 Package pdftex.def Info: figures/results/corner_plots/dynesty_0.1_0.333__corner.pdf  used on input line 90.
@@ -833,7 +829,7 @@ Overfull \hbox (7.72925pt too wide) in paragraph at lines 90--91
  [][] 
  []
 
-<figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf, id=149, 1004.553pt x 1004.553pt>
+<figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf, id=154, 1004.553pt x 1004.553pt>
 File: figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf Graphic file (type pdf)
 <use figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf>
 Package pdftex.def Info: figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf  used on input line 108.
@@ -849,7 +845,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.118 \subsubsection
                     {Limitations on the Prior Space} <./figures/results/torus_only_prior_corner_plots/dynesty_0.1_1.0__priors_corner.png>]
-<figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf, id=167, 1611.62097pt x 1611.62097pt>
+<figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf, id=172, 1611.62097pt x 1611.62097pt>
 File: figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf Graphic file (type pdf)
 <use figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>
 Package pdftex.def Info: figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf  used on input line 121.
@@ -859,7 +855,7 @@ Overfull \hbox (7.72925pt too wide) in paragraph at lines 121--122
  [][] 
  []
 
-<figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf, id=170, 1004.553pt x 1004.553pt>
+<figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf, id=175, 1004.553pt x 1004.553pt>
 File: figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf Graphic file (type pdf)
 <use figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf>
 Package pdftex.def Info: figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf  used on input line 127.
@@ -881,29 +877,32 @@ l.2 \section
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.62 
-      <./figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf>]
+l.65 \par
+          We find that model grids tend to favor smaller \Y values. Hot dust... <./figures/results/prior_corner_plots/dynesty_0.1_0.333__priors_corner.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72     \item T
-                he parameter space should only contain feasible models, as n... <./figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>]) (./sections/conclusions.tex) (./paper.bbl
+l.67 
+      <./figures/results/corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_corner.pdf>]) (./sections/conclusions.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.15 ...eyda et~al.}{2020}]{almeyda_modeling_2020}
-                                                  
+l.4     \item T
+               hese models tend to agree with and extend previous attempts t...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.15 ...eyda et~al.}{2020}]{almeyda_modeling_2020}
-                                                   <./figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf>]) [10
+l.4     \item T
+               hese models tend to agree with and extend previous attempts t... <./figures/results/prior_corner_plots/dynesty_0.1_0.333_nlos_nlos_pol_cloud_area_cloud_area_pol_cloud_size_ratio_priors_corner.pdf>]) (./paper.bbl) [10
 
 ] (./paper.aux)
  ***********
@@ -915,28 +914,25 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 78772C9BD7CE2C210C1C38D7311CA6F0;2178.
  ) 
 Here is how much of TeX's memory you used:
- 15496 strings out of 469515
- 229280 string characters out of 5470807
- 651704 words of memory out of 5000000
- 43827 multiletter control sequences out of 15000+600000
- 715800 words of font info for 155 fonts, out of 8000000 for 9000
+ 15502 strings out of 469515
+ 229404 string characters out of 5470807
+ 650698 words of memory out of 5000000
+ 43831 multiletter control sequences out of 15000+600000
+ 716008 words of font info for 156 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,15n,93p,3621b,508s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,15n,93p,3621b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsym.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on paper.pdf (10 pages, 6519073 bytes).
+Output written on paper.pdf (10 pages, 6522144 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 535 compressed objects within 6 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 977 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 49 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
